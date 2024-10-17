@@ -1,0 +1,846 @@
+2022-06-19 20:54:19.635 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2022-06-19 20:54:19.642 [restartedMain] INFO  com.example.SystemJavaApplication - Starting SystemJavaApplication using Java 11.0.12 on LAPTOP-4LBTC9AF with PID 11944 (D:\File\java\admin-template\java-template\target\classes started by wzh in D:\File\java\admin-template\java-template)
+2022-06-19 20:54:19.643 [restartedMain] INFO  com.example.SystemJavaApplication - The following 1 profile is active: "test"
+2022-06-19 20:54:19.668 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-19 20:54:19.668 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-19 20:54:20.820 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-06-19 20:54:20.821 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+2022-06-19 20:54:20.821 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-06-19 20:54:20.821 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-06-19 20:54:20.831 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-06-19 20:54:20.837 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-19 20:54:20.838 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-19 20:54:20.838 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-19 20:54:20.901 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-19 20:54:20.901 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1232 ms
+2022-06-19 20:54:21.028 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-06-19 20:54:21.448 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2022-06-19 20:54:22.304 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 20:54:22.305 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui.html']
+2022-06-19 20:54:22.305 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/doc.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 20:54:22.305 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/doc.html']
+2022-06-19 20:54:22.305 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui/*']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 20:54:22.305 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui/*']
+2022-06-19 20:54:22.305 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 20:54:22.305 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-resources/**']
+2022-06-19 20:54:22.305 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v2/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 20:54:22.305 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v2/api-docs']
+2022-06-19 20:54:22.305 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v3/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 20:54:22.305 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v3/api-docs']
+2022-06-19 20:54:22.305 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 20:54:22.305 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/webjars/**']
+2022-06-19 20:54:22.338 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2819219d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@411b72e2, org.springframework.security.web.context.SecurityContextPersistenceFilter@695da2f7, org.springframework.security.web.header.HeaderWriterFilter@2211589e, org.springframework.web.filter.CorsFilter@51e949f2, org.springframework.security.web.authentication.logout.LogoutFilter@5d05ac74, com.example.filter.JwtAuthorizationFilter@64849c2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@31e14297, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@14421eba, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@b1ed43f, org.springframework.security.web.session.SessionManagementFilter@3791924e, org.springframework.security.web.access.ExceptionTranslationFilter@127ad3c3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@172a65f6]
+2022-06-19 20:54:22.487 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-06-19 20:54:22.703 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-06-19 20:54:22.717 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-19 20:54:22.896 [restartedMain] INFO  com.example.SystemJavaApplication - Started SystemJavaApplication in 3.606 seconds (JVM running for 12.238)
+2022-06-19 20:54:31.998 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-19 20:54:31.998 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-06-19 20:54:31.999 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-06-19 21:04:13.882 [http-nio-8080-exec-9] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/admin-template?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC, version : 1.2.4, lastPacketReceivedIdleMillis : 569863
+2022-06-19 21:04:13.883 [http-nio-8080-exec-9] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/admin-template?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC, version : 1.2.4, lastPacketReceivedIdleMillis : 581460
+2022-06-19 21:04:13.884 [http-nio-8080-exec-9] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/admin-template?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC, version : 1.2.4, lastPacketReceivedIdleMillis : 592448
+2022-06-19 21:04:13.885 [http-nio-8080-exec-9] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/admin-template?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC, version : 1.2.4, lastPacketReceivedIdleMillis : 592452
+2022-06-19 21:04:13.885 [http-nio-8080-exec-9] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/admin-template?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC, version : 1.2.4, lastPacketReceivedIdleMillis : 592460
+2022-06-19 21:12:01.143 [http-nio-8080-exec-3] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/admin-template?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC, version : 1.2.4, lastPacketReceivedIdleMillis : 467160
+2022-06-19 21:12:01.144 [http-nio-8080-exec-3] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/admin-template?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC, version : 1.2.4, lastPacketReceivedIdleMillis : 467172
+2022-06-19 21:14:04.256 [http-nio-8080-exec-4] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/admin-template?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC, version : 1.2.4, lastPacketReceivedIdleMillis : 123018
+2022-06-19 21:14:04.258 [http-nio-8080-exec-4] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/admin-template?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC, version : 1.2.4, lastPacketReceivedIdleMillis : 123032
+2022-06-19 21:36:29.430 [http-nio-8080-exec-3] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/admin-template?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC, version : 1.2.4, lastPacketReceivedIdleMillis : 1314865
+2022-06-19 21:36:29.430 [http-nio-8080-exec-3] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/admin-template?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC, version : 1.2.4, lastPacketReceivedIdleMillis : 1314877
+2022-06-19 21:37:54.226 [Thread-4] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2022-06-19 21:37:54.227 [Thread-4] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2022-06-19 21:37:54.308 [restartedMain] INFO  com.example.SystemJavaApplication - Starting SystemJavaApplication using Java 11.0.12 on LAPTOP-4LBTC9AF with PID 11944 (D:\File\java\admin-template\java-template\target\classes started by wzh in D:\File\java\admin-template\java-template)
+2022-06-19 21:37:54.308 [restartedMain] INFO  com.example.SystemJavaApplication - The following 1 profile is active: "test"
+2022-06-19 21:37:54.644 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-06-19 21:37:54.644 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+2022-06-19 21:37:54.644 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-06-19 21:37:54.644 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-06-19 21:37:54.644 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-06-19 21:37:54.645 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-19 21:37:54.645 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-19 21:37:54.645 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-19 21:37:54.657 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-19 21:37:54.658 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 348 ms
+2022-06-19 21:37:54.706 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-06-19 21:37:54.951 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-2} inited
+2022-06-19 21:37:55.275 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:37:55.275 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui.html']
+2022-06-19 21:37:55.275 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/doc.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:37:55.275 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/doc.html']
+2022-06-19 21:37:55.275 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui/*']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:37:55.275 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui/*']
+2022-06-19 21:37:55.275 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:37:55.275 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-resources/**']
+2022-06-19 21:37:55.275 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v2/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:37:55.275 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v2/api-docs']
+2022-06-19 21:37:55.275 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v3/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:37:55.275 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v3/api-docs']
+2022-06-19 21:37:55.275 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:37:55.276 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/webjars/**']
+2022-06-19 21:37:55.291 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5ae0afca, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2935e32b, org.springframework.security.web.context.SecurityContextPersistenceFilter@15feac78, org.springframework.security.web.header.HeaderWriterFilter@7ed985b3, org.springframework.web.filter.CorsFilter@1a70e482, org.springframework.security.web.authentication.logout.LogoutFilter@19311e4b, com.example.filter.JwtAuthorizationFilter@51b06c96, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1094c5ac, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@22d23e10, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3d91e3c1, org.springframework.security.web.session.SessionManagementFilter@1b7807b3, org.springframework.security.web.access.ExceptionTranslationFilter@620cec7f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2cc810b9]
+2022-06-19 21:37:55.376 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-06-19 21:37:55.502 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-06-19 21:37:55.504 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-19 21:37:55.557 [restartedMain] INFO  com.example.SystemJavaApplication - Started SystemJavaApplication in 1.275 seconds (JVM running for 2624.898)
+2022-06-19 21:37:55.558 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2022-06-19 21:41:19.549 [Thread-7] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-2} closing ...
+2022-06-19 21:41:19.551 [Thread-7] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-2} closed
+2022-06-19 21:41:19.609 [restartedMain] INFO  com.example.SystemJavaApplication - Starting SystemJavaApplication using Java 11.0.12 on LAPTOP-4LBTC9AF with PID 11944 (D:\File\java\admin-template\java-template\target\classes started by wzh in D:\File\java\admin-template\java-template)
+2022-06-19 21:41:19.609 [restartedMain] INFO  com.example.SystemJavaApplication - The following 1 profile is active: "test"
+2022-06-19 21:41:19.945 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-06-19 21:41:19.945 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+2022-06-19 21:41:19.945 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-06-19 21:41:19.945 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-06-19 21:41:19.946 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-06-19 21:41:19.946 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-19 21:41:19.946 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-19 21:41:19.946 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-19 21:41:19.958 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-19 21:41:19.958 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 347 ms
+2022-06-19 21:41:20.005 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-06-19 21:41:20.250 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-3} inited
+2022-06-19 21:41:20.563 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:41:20.563 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui.html']
+2022-06-19 21:41:20.563 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/doc.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:41:20.563 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/doc.html']
+2022-06-19 21:41:20.564 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui/*']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:41:20.564 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui/*']
+2022-06-19 21:41:20.564 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:41:20.564 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-resources/**']
+2022-06-19 21:41:20.564 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v2/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:41:20.564 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v2/api-docs']
+2022-06-19 21:41:20.564 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v3/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:41:20.564 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v3/api-docs']
+2022-06-19 21:41:20.564 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:41:20.564 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/webjars/**']
+2022-06-19 21:41:20.581 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5431fd14, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5c3317df, org.springframework.security.web.context.SecurityContextPersistenceFilter@14189968, org.springframework.security.web.header.HeaderWriterFilter@554d965f, org.springframework.web.filter.CorsFilter@6b82e6ff, org.springframework.security.web.authentication.logout.LogoutFilter@1333122d, com.example.filter.JwtAuthorizationFilter@7aeafc7c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@371637ae, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@ed0a07d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@60ae0641, org.springframework.security.web.session.SessionManagementFilter@350f1441, org.springframework.security.web.access.ExceptionTranslationFilter@3e23a1c4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@194063db]
+2022-06-19 21:41:20.681 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-06-19 21:41:20.824 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-06-19 21:41:20.826 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-19 21:41:20.883 [restartedMain] INFO  com.example.SystemJavaApplication - Started SystemJavaApplication in 1.297 seconds (JVM running for 2830.225)
+2022-06-19 21:41:20.885 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2022-06-19 21:41:21.042 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-19 21:41:21.043 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-06-19 21:41:21.045 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2022-06-19 21:41:21.069 [http-nio-8080-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2022-06-19 21:41:22.428 [Thread-11] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-3} closing ...
+2022-06-19 21:41:22.429 [Thread-11] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-3} closed
+2022-06-19 21:41:22.491 [restartedMain] INFO  com.example.SystemJavaApplication - Starting SystemJavaApplication using Java 11.0.12 on LAPTOP-4LBTC9AF with PID 11944 (D:\File\java\admin-template\java-template\target\classes started by wzh in D:\File\java\admin-template\java-template)
+2022-06-19 21:41:22.491 [restartedMain] INFO  com.example.SystemJavaApplication - The following 1 profile is active: "test"
+2022-06-19 21:41:22.774 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-06-19 21:41:22.774 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+2022-06-19 21:41:22.774 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-06-19 21:41:22.774 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-06-19 21:41:22.775 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-06-19 21:41:22.775 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-19 21:41:22.775 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-19 21:41:22.775 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-19 21:41:22.788 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-19 21:41:22.788 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 296 ms
+2022-06-19 21:41:22.832 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-06-19 21:41:23.068 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-4} inited
+2022-06-19 21:41:23.405 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:41:23.405 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui.html']
+2022-06-19 21:41:23.405 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/doc.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:41:23.405 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/doc.html']
+2022-06-19 21:41:23.405 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui/*']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:41:23.405 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui/*']
+2022-06-19 21:41:23.405 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:41:23.405 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-resources/**']
+2022-06-19 21:41:23.405 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v2/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:41:23.405 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v2/api-docs']
+2022-06-19 21:41:23.405 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v3/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:41:23.405 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v3/api-docs']
+2022-06-19 21:41:23.405 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:41:23.406 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/webjars/**']
+2022-06-19 21:41:23.421 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1ce6c152, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@47406f, org.springframework.security.web.context.SecurityContextPersistenceFilter@4e318b6f, org.springframework.security.web.header.HeaderWriterFilter@4e2b71ac, org.springframework.web.filter.CorsFilter@165fa616, org.springframework.security.web.authentication.logout.LogoutFilter@1875e1ec, com.example.filter.JwtAuthorizationFilter@c9acf38, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@a6f24ce, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1fdc823e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@17a8bf56, org.springframework.security.web.session.SessionManagementFilter@567276c8, org.springframework.security.web.access.ExceptionTranslationFilter@23bcf4cb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@58a86035]
+2022-06-19 21:41:23.510 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-06-19 21:41:23.640 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-06-19 21:41:23.642 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-19 21:41:23.691 [restartedMain] INFO  com.example.SystemJavaApplication - Started SystemJavaApplication in 1.225 seconds (JVM running for 2833.033)
+2022-06-19 21:41:23.692 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2022-06-19 21:41:39.486 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-19 21:41:39.486 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-06-19 21:41:39.487 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-06-19 21:41:39.503 [http-nio-8080-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2022-06-19 21:41:59.022 [Thread-15] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-4} closing ...
+2022-06-19 21:41:59.023 [Thread-15] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-4} closed
+2022-06-19 21:41:59.081 [restartedMain] INFO  com.example.SystemJavaApplication - Starting SystemJavaApplication using Java 11.0.12 on LAPTOP-4LBTC9AF with PID 11944 (D:\File\java\admin-template\java-template\target\classes started by wzh in D:\File\java\admin-template\java-template)
+2022-06-19 21:41:59.081 [restartedMain] INFO  com.example.SystemJavaApplication - The following 1 profile is active: "test"
+2022-06-19 21:41:59.445 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-06-19 21:41:59.446 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+2022-06-19 21:41:59.446 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-06-19 21:41:59.446 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-06-19 21:41:59.446 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-06-19 21:41:59.446 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-19 21:41:59.446 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-19 21:41:59.446 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-19 21:41:59.463 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-19 21:41:59.463 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 380 ms
+2022-06-19 21:41:59.508 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-06-19 21:41:59.762 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-5} inited
+2022-06-19 21:42:00.086 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:42:00.086 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui.html']
+2022-06-19 21:42:00.086 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/doc.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:42:00.086 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/doc.html']
+2022-06-19 21:42:00.086 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui/*']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:42:00.086 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui/*']
+2022-06-19 21:42:00.086 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:42:00.086 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-resources/**']
+2022-06-19 21:42:00.086 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v2/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:42:00.086 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v2/api-docs']
+2022-06-19 21:42:00.086 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v3/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:42:00.086 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v3/api-docs']
+2022-06-19 21:42:00.086 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:42:00.086 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/webjars/**']
+2022-06-19 21:42:00.102 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@61b0a9bc, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@17e6796f, org.springframework.security.web.context.SecurityContextPersistenceFilter@4ba08241, org.springframework.security.web.header.HeaderWriterFilter@2a6d827a, org.springframework.web.filter.CorsFilter@22c68327, org.springframework.security.web.authentication.logout.LogoutFilter@72067fa8, com.example.filter.JwtAuthorizationFilter@4a3d0d0b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7c17ea93, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3a2fd939, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@27d7aca3, org.springframework.security.web.session.SessionManagementFilter@4678257d, org.springframework.security.web.access.ExceptionTranslationFilter@65ca4957, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7daf40]
+2022-06-19 21:42:00.193 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-06-19 21:42:00.356 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-06-19 21:42:00.358 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-19 21:42:00.409 [restartedMain] INFO  com.example.SystemJavaApplication - Started SystemJavaApplication in 1.346 seconds (JVM running for 2869.75)
+2022-06-19 21:42:00.410 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2022-06-19 21:42:01.971 [Thread-19] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-5} closing ...
+2022-06-19 21:42:01.973 [Thread-19] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-5} closed
+2022-06-19 21:42:02.036 [restartedMain] INFO  com.example.SystemJavaApplication - Starting SystemJavaApplication using Java 11.0.12 on LAPTOP-4LBTC9AF with PID 11944 (D:\File\java\admin-template\java-template\target\classes started by wzh in D:\File\java\admin-template\java-template)
+2022-06-19 21:42:02.036 [restartedMain] INFO  com.example.SystemJavaApplication - The following 1 profile is active: "test"
+2022-06-19 21:42:02.330 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-06-19 21:42:02.330 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+2022-06-19 21:42:02.330 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-06-19 21:42:02.331 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-06-19 21:42:02.331 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-06-19 21:42:02.331 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-19 21:42:02.331 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-19 21:42:02.331 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-19 21:42:02.341 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-19 21:42:02.342 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 305 ms
+2022-06-19 21:42:02.384 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-06-19 21:42:02.633 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-6} inited
+2022-06-19 21:42:02.987 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:42:02.987 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui.html']
+2022-06-19 21:42:02.987 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/doc.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:42:02.987 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/doc.html']
+2022-06-19 21:42:02.987 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui/*']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:42:02.987 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui/*']
+2022-06-19 21:42:02.987 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:42:02.987 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-resources/**']
+2022-06-19 21:42:02.988 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v2/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:42:02.988 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v2/api-docs']
+2022-06-19 21:42:02.988 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v3/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:42:02.988 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v3/api-docs']
+2022-06-19 21:42:02.988 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:42:02.988 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/webjars/**']
+2022-06-19 21:42:03.006 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1e12792a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@313ca022, org.springframework.security.web.context.SecurityContextPersistenceFilter@5111fdf9, org.springframework.security.web.header.HeaderWriterFilter@19d0ee39, org.springframework.web.filter.CorsFilter@39ded6bc, org.springframework.security.web.authentication.logout.LogoutFilter@5bce9c69, com.example.filter.JwtAuthorizationFilter@9cdc170, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1100ce1e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@f3f5b21, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2df19b24, org.springframework.security.web.session.SessionManagementFilter@766f8698, org.springframework.security.web.access.ExceptionTranslationFilter@44d0802d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@905b3ae]
+2022-06-19 21:42:03.112 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-06-19 21:42:03.249 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-06-19 21:42:03.250 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-19 21:42:03.319 [restartedMain] INFO  com.example.SystemJavaApplication - Started SystemJavaApplication in 1.302 seconds (JVM running for 2872.661)
+2022-06-19 21:42:03.321 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2022-06-19 21:42:07.060 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-19 21:42:07.060 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-06-19 21:42:07.061 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-06-19 21:42:28.350 [Thread-23] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-6} closing ...
+2022-06-19 21:42:28.352 [Thread-23] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-6} closed
+2022-06-19 21:42:28.418 [restartedMain] INFO  com.example.SystemJavaApplication - Starting SystemJavaApplication using Java 11.0.12 on LAPTOP-4LBTC9AF with PID 11944 (D:\File\java\admin-template\java-template\target\classes started by wzh in D:\File\java\admin-template\java-template)
+2022-06-19 21:42:28.418 [restartedMain] INFO  com.example.SystemJavaApplication - The following 1 profile is active: "test"
+2022-06-19 21:42:28.724 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-06-19 21:42:28.724 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+2022-06-19 21:42:28.724 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-06-19 21:42:28.724 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-06-19 21:42:28.725 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-06-19 21:42:28.725 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-19 21:42:28.725 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-19 21:42:28.725 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-19 21:42:28.736 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-19 21:42:28.736 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 317 ms
+2022-06-19 21:42:28.800 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-06-19 21:42:29.092 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-7} inited
+2022-06-19 21:42:29.445 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:42:29.445 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui.html']
+2022-06-19 21:42:29.445 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/doc.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:42:29.445 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/doc.html']
+2022-06-19 21:42:29.445 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui/*']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:42:29.445 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui/*']
+2022-06-19 21:42:29.445 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:42:29.446 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-resources/**']
+2022-06-19 21:42:29.446 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v2/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:42:29.446 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v2/api-docs']
+2022-06-19 21:42:29.446 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v3/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:42:29.446 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v3/api-docs']
+2022-06-19 21:42:29.446 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:42:29.446 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/webjars/**']
+2022-06-19 21:42:29.461 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7368b3f0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2dbfd33b, org.springframework.security.web.context.SecurityContextPersistenceFilter@49cfc742, org.springframework.security.web.header.HeaderWriterFilter@276bfac5, org.springframework.web.filter.CorsFilter@3e2e1931, org.springframework.security.web.authentication.logout.LogoutFilter@346839e9, com.example.filter.JwtAuthorizationFilter@54ce0813, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6df19bf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7e1a7673, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6f4a534f, org.springframework.security.web.session.SessionManagementFilter@75310f86, org.springframework.security.web.access.ExceptionTranslationFilter@201de84c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4e0eb62b]
+2022-06-19 21:42:29.549 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-06-19 21:42:29.699 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-06-19 21:42:29.701 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-19 21:42:29.742 [restartedMain] INFO  com.example.SystemJavaApplication - Started SystemJavaApplication in 1.343 seconds (JVM running for 2899.083)
+2022-06-19 21:42:29.743 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2022-06-19 21:42:31.274 [Thread-27] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-7} closing ...
+2022-06-19 21:42:31.275 [Thread-27] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-7} closed
+2022-06-19 21:42:31.340 [restartedMain] INFO  com.example.SystemJavaApplication - Starting SystemJavaApplication using Java 11.0.12 on LAPTOP-4LBTC9AF with PID 11944 (D:\File\java\admin-template\java-template\target\classes started by wzh in D:\File\java\admin-template\java-template)
+2022-06-19 21:42:31.340 [restartedMain] INFO  com.example.SystemJavaApplication - The following 1 profile is active: "test"
+2022-06-19 21:42:31.644 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-06-19 21:42:31.644 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+2022-06-19 21:42:31.644 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-06-19 21:42:31.644 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-06-19 21:42:31.644 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-06-19 21:42:31.645 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-19 21:42:31.645 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-19 21:42:31.645 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-19 21:42:31.661 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-19 21:42:31.661 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 320 ms
+2022-06-19 21:42:31.705 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-06-19 21:42:31.964 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-8} inited
+2022-06-19 21:42:32.327 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:42:32.327 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui.html']
+2022-06-19 21:42:32.327 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/doc.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:42:32.327 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/doc.html']
+2022-06-19 21:42:32.327 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui/*']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:42:32.327 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui/*']
+2022-06-19 21:42:32.327 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:42:32.327 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-resources/**']
+2022-06-19 21:42:32.327 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v2/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:42:32.327 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v2/api-docs']
+2022-06-19 21:42:32.327 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v3/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:42:32.327 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v3/api-docs']
+2022-06-19 21:42:32.327 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:42:32.327 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/webjars/**']
+2022-06-19 21:42:32.347 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3a4856de, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2d3ab3e1, org.springframework.security.web.context.SecurityContextPersistenceFilter@254b304f, org.springframework.security.web.header.HeaderWriterFilter@1412d81, org.springframework.web.filter.CorsFilter@6e9021ad, org.springframework.security.web.authentication.logout.LogoutFilter@33b492e8, com.example.filter.JwtAuthorizationFilter@444ff584, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4cc373bb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@44666287, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@47426ea8, org.springframework.security.web.session.SessionManagementFilter@6d0ccc18, org.springframework.security.web.access.ExceptionTranslationFilter@5e96eeeb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1d63ddb8]
+2022-06-19 21:42:32.464 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-06-19 21:42:32.595 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-06-19 21:42:32.596 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-19 21:42:32.647 [restartedMain] INFO  com.example.SystemJavaApplication - Started SystemJavaApplication in 1.325 seconds (JVM running for 2901.989)
+2022-06-19 21:42:32.649 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2022-06-19 21:42:38.310 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-19 21:42:38.311 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-06-19 21:42:38.312 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-06-19 21:43:25.597 [Thread-31] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-8} closing ...
+2022-06-19 21:43:25.598 [Thread-31] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-8} closed
+2022-06-19 21:43:25.678 [restartedMain] INFO  com.example.SystemJavaApplication - Starting SystemJavaApplication using Java 11.0.12 on LAPTOP-4LBTC9AF with PID 11944 (D:\File\java\admin-template\java-template\target\classes started by wzh in D:\File\java\admin-template\java-template)
+2022-06-19 21:43:25.678 [restartedMain] INFO  com.example.SystemJavaApplication - The following 1 profile is active: "test"
+2022-06-19 21:43:25.980 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-06-19 21:43:25.980 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+2022-06-19 21:43:25.980 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-06-19 21:43:25.980 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-06-19 21:43:25.980 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-06-19 21:43:25.980 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-19 21:43:25.981 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-19 21:43:25.981 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-19 21:43:25.993 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-19 21:43:25.993 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 314 ms
+2022-06-19 21:43:26.037 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-06-19 21:43:26.295 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-9} inited
+2022-06-19 21:43:26.648 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:43:26.648 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui.html']
+2022-06-19 21:43:26.648 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/doc.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:43:26.648 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/doc.html']
+2022-06-19 21:43:26.648 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui/*']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:43:26.648 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui/*']
+2022-06-19 21:43:26.649 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:43:26.649 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-resources/**']
+2022-06-19 21:43:26.649 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v2/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:43:26.649 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v2/api-docs']
+2022-06-19 21:43:26.649 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v3/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:43:26.649 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v3/api-docs']
+2022-06-19 21:43:26.649 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:43:26.649 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/webjars/**']
+2022-06-19 21:43:26.664 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3df73e2f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4012e135, org.springframework.security.web.context.SecurityContextPersistenceFilter@26affba7, org.springframework.security.web.header.HeaderWriterFilter@146919d0, org.springframework.web.filter.CorsFilter@31f2d9fa, org.springframework.security.web.authentication.logout.LogoutFilter@23013d7a, com.example.filter.JwtAuthorizationFilter@536fa39b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@480bf674, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1470c13c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5e6301f7, org.springframework.security.web.session.SessionManagementFilter@6a508c9d, org.springframework.security.web.access.ExceptionTranslationFilter@6990fb55, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6a4ce9a8]
+2022-06-19 21:43:26.760 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-06-19 21:43:26.897 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-06-19 21:43:26.899 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-19 21:43:26.944 [restartedMain] INFO  com.example.SystemJavaApplication - Started SystemJavaApplication in 1.286 seconds (JVM running for 2956.286)
+2022-06-19 21:43:26.946 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2022-06-19 21:43:28.491 [Thread-35] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-9} closing ...
+2022-06-19 21:43:28.493 [Thread-35] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-9} closed
+2022-06-19 21:43:28.572 [restartedMain] INFO  com.example.SystemJavaApplication - Starting SystemJavaApplication using Java 11.0.12 on LAPTOP-4LBTC9AF with PID 11944 (D:\File\java\admin-template\java-template\target\classes started by wzh in D:\File\java\admin-template\java-template)
+2022-06-19 21:43:28.573 [restartedMain] INFO  com.example.SystemJavaApplication - The following 1 profile is active: "test"
+2022-06-19 21:43:28.858 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-06-19 21:43:28.858 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+2022-06-19 21:43:28.859 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-06-19 21:43:28.859 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-06-19 21:43:28.859 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-06-19 21:43:28.859 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-19 21:43:28.859 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-19 21:43:28.859 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-19 21:43:28.875 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-19 21:43:28.876 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 302 ms
+2022-06-19 21:43:28.915 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-06-19 21:43:29.158 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-10} inited
+2022-06-19 21:43:29.499 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:43:29.499 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui.html']
+2022-06-19 21:43:29.499 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/doc.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:43:29.499 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/doc.html']
+2022-06-19 21:43:29.499 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui/*']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:43:29.499 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui/*']
+2022-06-19 21:43:29.499 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:43:29.499 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-resources/**']
+2022-06-19 21:43:29.499 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v2/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:43:29.499 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v2/api-docs']
+2022-06-19 21:43:29.499 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v3/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:43:29.499 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v3/api-docs']
+2022-06-19 21:43:29.499 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:43:29.499 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/webjars/**']
+2022-06-19 21:43:29.515 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@a8449eb, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@46206aee, org.springframework.security.web.context.SecurityContextPersistenceFilter@57bc416f, org.springframework.security.web.header.HeaderWriterFilter@486c81e2, org.springframework.web.filter.CorsFilter@236cec16, org.springframework.security.web.authentication.logout.LogoutFilter@7bbf923b, com.example.filter.JwtAuthorizationFilter@75a03b09, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@577401e3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7b3bf97e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@391bb923, org.springframework.security.web.session.SessionManagementFilter@3370c863, org.springframework.security.web.access.ExceptionTranslationFilter@5a9b5a69, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@ae8c3f5]
+2022-06-19 21:43:29.603 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-06-19 21:43:29.760 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-06-19 21:43:29.762 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-19 21:43:29.797 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-19 21:43:29.798 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-06-19 21:43:29.800 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2022-06-19 21:43:29.863 [restartedMain] INFO  com.example.SystemJavaApplication - Started SystemJavaApplication in 1.306 seconds (JVM running for 2959.205)
+2022-06-19 21:43:29.865 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2022-06-19 21:44:05.548 [Thread-39] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-10} closing ...
+2022-06-19 21:44:05.549 [Thread-39] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-10} closed
+2022-06-19 21:44:05.617 [restartedMain] INFO  com.example.SystemJavaApplication - Starting SystemJavaApplication using Java 11.0.12 on LAPTOP-4LBTC9AF with PID 11944 (D:\File\java\admin-template\java-template\target\classes started by wzh in D:\File\java\admin-template\java-template)
+2022-06-19 21:44:05.618 [restartedMain] INFO  com.example.SystemJavaApplication - The following 1 profile is active: "test"
+2022-06-19 21:44:05.893 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-06-19 21:44:05.893 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+2022-06-19 21:44:05.893 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-06-19 21:44:05.893 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-06-19 21:44:05.893 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-06-19 21:44:05.894 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-19 21:44:05.894 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-19 21:44:05.894 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-19 21:44:05.904 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-19 21:44:05.904 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 285 ms
+2022-06-19 21:44:05.947 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-06-19 21:44:06.200 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-11} inited
+2022-06-19 21:44:06.515 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:44:06.515 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui.html']
+2022-06-19 21:44:06.515 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/doc.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:44:06.515 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/doc.html']
+2022-06-19 21:44:06.515 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui/*']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:44:06.515 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui/*']
+2022-06-19 21:44:06.515 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:44:06.515 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-resources/**']
+2022-06-19 21:44:06.515 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v2/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:44:06.515 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v2/api-docs']
+2022-06-19 21:44:06.516 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v3/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:44:06.516 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v3/api-docs']
+2022-06-19 21:44:06.516 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:44:06.516 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/webjars/**']
+2022-06-19 21:44:06.531 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@554730d6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2f459bb8, org.springframework.security.web.context.SecurityContextPersistenceFilter@78354d78, org.springframework.security.web.header.HeaderWriterFilter@68b03851, org.springframework.web.filter.CorsFilter@8cb34b4, org.springframework.security.web.authentication.logout.LogoutFilter@5805f139, com.example.filter.JwtAuthorizationFilter@4171e801, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@679a237e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@e81fd6c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@42524eaa, org.springframework.security.web.session.SessionManagementFilter@1e1343f2, org.springframework.security.web.access.ExceptionTranslationFilter@49fad951, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@590d60b]
+2022-06-19 21:44:06.621 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-06-19 21:44:06.762 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-06-19 21:44:06.763 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-19 21:44:06.804 [restartedMain] INFO  com.example.SystemJavaApplication - Started SystemJavaApplication in 1.204 seconds (JVM running for 2996.146)
+2022-06-19 21:44:06.806 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2022-06-19 21:44:15.029 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-19 21:44:15.029 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-06-19 21:44:15.030 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-06-19 21:44:15.046 [http-nio-8080-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required request part 'fileList' is not present]
+2022-06-19 21:45:34.651 [Thread-43] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-11} closing ...
+2022-06-19 21:45:34.654 [Thread-43] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-11} closed
+2022-06-19 21:45:34.743 [restartedMain] INFO  com.example.SystemJavaApplication - Starting SystemJavaApplication using Java 11.0.12 on LAPTOP-4LBTC9AF with PID 11944 (D:\File\java\admin-template\java-template\target\classes started by wzh in D:\File\java\admin-template\java-template)
+2022-06-19 21:45:34.743 [restartedMain] INFO  com.example.SystemJavaApplication - The following 1 profile is active: "test"
+2022-06-19 21:45:35.031 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-06-19 21:45:35.031 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+2022-06-19 21:45:35.031 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-06-19 21:45:35.031 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-06-19 21:45:35.031 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-06-19 21:45:35.032 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-19 21:45:35.032 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-19 21:45:35.032 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-19 21:45:35.042 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-19 21:45:35.042 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 298 ms
+2022-06-19 21:45:35.086 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-06-19 21:45:35.346 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-12} inited
+2022-06-19 21:45:35.657 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:45:35.657 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui.html']
+2022-06-19 21:45:35.657 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/doc.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:45:35.657 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/doc.html']
+2022-06-19 21:45:35.657 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui/*']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:45:35.657 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui/*']
+2022-06-19 21:45:35.657 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:45:35.657 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-resources/**']
+2022-06-19 21:45:35.657 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v2/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:45:35.657 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v2/api-docs']
+2022-06-19 21:45:35.657 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v3/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:45:35.657 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v3/api-docs']
+2022-06-19 21:45:35.657 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:45:35.657 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/webjars/**']
+2022-06-19 21:45:35.672 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7eb47884, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@bc99ea4, org.springframework.security.web.context.SecurityContextPersistenceFilter@3c84ae3b, org.springframework.security.web.header.HeaderWriterFilter@848f630, org.springframework.web.filter.CorsFilter@78cf41f5, org.springframework.security.web.authentication.logout.LogoutFilter@55785358, com.example.filter.JwtAuthorizationFilter@4b3eadac, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4c70bd05, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3463bcd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@29dc258d, org.springframework.security.web.session.SessionManagementFilter@7327975d, org.springframework.security.web.access.ExceptionTranslationFilter@5b85603e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@37caa957]
+2022-06-19 21:45:35.760 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-06-19 21:45:35.892 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-06-19 21:45:35.893 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-19 21:45:35.934 [restartedMain] INFO  com.example.SystemJavaApplication - Started SystemJavaApplication in 1.209 seconds (JVM running for 3085.275)
+2022-06-19 21:45:35.935 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2022-06-19 21:45:37.449 [Thread-47] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-12} closing ...
+2022-06-19 21:45:37.450 [Thread-47] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-12} closed
+2022-06-19 21:45:37.526 [restartedMain] INFO  com.example.SystemJavaApplication - Starting SystemJavaApplication using Java 11.0.12 on LAPTOP-4LBTC9AF with PID 11944 (D:\File\java\admin-template\java-template\target\classes started by wzh in D:\File\java\admin-template\java-template)
+2022-06-19 21:45:37.527 [restartedMain] INFO  com.example.SystemJavaApplication - The following 1 profile is active: "test"
+2022-06-19 21:45:37.797 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-06-19 21:45:37.797 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+2022-06-19 21:45:37.797 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-06-19 21:45:37.797 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-06-19 21:45:37.797 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-06-19 21:45:37.798 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-19 21:45:37.798 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-19 21:45:37.798 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-19 21:45:37.808 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-19 21:45:37.808 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 280 ms
+2022-06-19 21:45:37.847 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-06-19 21:45:38.092 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-13} inited
+2022-06-19 21:45:38.401 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:45:38.401 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui.html']
+2022-06-19 21:45:38.401 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/doc.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:45:38.401 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/doc.html']
+2022-06-19 21:45:38.401 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui/*']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:45:38.401 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui/*']
+2022-06-19 21:45:38.401 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:45:38.401 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-resources/**']
+2022-06-19 21:45:38.401 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v2/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:45:38.401 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v2/api-docs']
+2022-06-19 21:45:38.401 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v3/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:45:38.401 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v3/api-docs']
+2022-06-19 21:45:38.401 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:45:38.401 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/webjars/**']
+2022-06-19 21:45:38.416 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@18a22f97, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6d641cd1, org.springframework.security.web.context.SecurityContextPersistenceFilter@6a692aff, org.springframework.security.web.header.HeaderWriterFilter@771760b, org.springframework.web.filter.CorsFilter@5e6af55e, org.springframework.security.web.authentication.logout.LogoutFilter@32dc50b2, com.example.filter.JwtAuthorizationFilter@31c01cf3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@475f8055, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4b92779b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7f0b4958, org.springframework.security.web.session.SessionManagementFilter@5501f117, org.springframework.security.web.access.ExceptionTranslationFilter@62b9f44b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7177fe45]
+2022-06-19 21:45:38.507 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-06-19 21:45:38.638 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-06-19 21:45:38.639 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-19 21:45:38.681 [restartedMain] INFO  com.example.SystemJavaApplication - Started SystemJavaApplication in 1.17 seconds (JVM running for 3088.023)
+2022-06-19 21:45:38.682 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2022-06-19 21:45:56.097 [Thread-51] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-13} closing ...
+2022-06-19 21:45:56.099 [Thread-51] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-13} closed
+2022-06-19 21:45:56.189 [restartedMain] INFO  com.example.SystemJavaApplication - Starting SystemJavaApplication using Java 11.0.12 on LAPTOP-4LBTC9AF with PID 11944 (D:\File\java\admin-template\java-template\target\classes started by wzh in D:\File\java\admin-template\java-template)
+2022-06-19 21:45:56.189 [restartedMain] INFO  com.example.SystemJavaApplication - The following 1 profile is active: "test"
+2022-06-19 21:45:56.472 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-06-19 21:45:56.472 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+2022-06-19 21:45:56.473 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-06-19 21:45:56.473 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-06-19 21:45:56.473 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-06-19 21:45:56.473 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-19 21:45:56.473 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-19 21:45:56.473 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-19 21:45:56.485 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-19 21:45:56.485 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 295 ms
+2022-06-19 21:45:56.545 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-06-19 21:45:56.820 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-14} inited
+2022-06-19 21:45:57.159 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:45:57.159 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui.html']
+2022-06-19 21:45:57.159 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/doc.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:45:57.159 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/doc.html']
+2022-06-19 21:45:57.159 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui/*']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:45:57.159 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui/*']
+2022-06-19 21:45:57.159 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:45:57.159 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-resources/**']
+2022-06-19 21:45:57.159 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v2/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:45:57.159 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v2/api-docs']
+2022-06-19 21:45:57.159 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v3/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:45:57.160 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v3/api-docs']
+2022-06-19 21:45:57.160 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:45:57.160 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/webjars/**']
+2022-06-19 21:45:57.175 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@222e393, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@31e7975e, org.springframework.security.web.context.SecurityContextPersistenceFilter@57af8812, org.springframework.security.web.header.HeaderWriterFilter@317a3c29, org.springframework.web.filter.CorsFilter@6653a607, org.springframework.security.web.authentication.logout.LogoutFilter@12204dd4, com.example.filter.JwtAuthorizationFilter@48a08161, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@756a93a2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@15916252, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3bd7daa4, org.springframework.security.web.session.SessionManagementFilter@61f9a416, org.springframework.security.web.access.ExceptionTranslationFilter@1516ee33, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@54f4ee07]
+2022-06-19 21:45:57.273 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-06-19 21:45:57.402 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-06-19 21:45:57.403 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-19 21:45:57.445 [restartedMain] INFO  com.example.SystemJavaApplication - Started SystemJavaApplication in 1.276 seconds (JVM running for 3106.787)
+2022-06-19 21:45:57.447 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2022-06-19 21:48:08.367 [Thread-55] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-14} closing ...
+2022-06-19 21:48:08.370 [Thread-55] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-14} closed
+2022-06-19 21:48:08.455 [restartedMain] INFO  com.example.SystemJavaApplication - Starting SystemJavaApplication using Java 11.0.12 on LAPTOP-4LBTC9AF with PID 11944 (D:\File\java\admin-template\java-template\target\classes started by wzh in D:\File\java\admin-template\java-template)
+2022-06-19 21:48:08.455 [restartedMain] INFO  com.example.SystemJavaApplication - The following 1 profile is active: "test"
+2022-06-19 21:48:08.757 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-06-19 21:48:08.757 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+2022-06-19 21:48:08.757 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-06-19 21:48:08.757 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-06-19 21:48:08.757 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-06-19 21:48:08.758 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-19 21:48:08.758 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-19 21:48:08.758 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-19 21:48:08.769 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-19 21:48:08.769 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 312 ms
+2022-06-19 21:48:08.814 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-06-19 21:48:09.073 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-15} inited
+2022-06-19 21:48:09.397 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:48:09.397 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui.html']
+2022-06-19 21:48:09.397 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/doc.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:48:09.397 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/doc.html']
+2022-06-19 21:48:09.397 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui/*']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:48:09.397 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui/*']
+2022-06-19 21:48:09.397 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:48:09.397 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-resources/**']
+2022-06-19 21:48:09.397 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v2/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:48:09.397 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v2/api-docs']
+2022-06-19 21:48:09.397 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v3/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:48:09.397 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v3/api-docs']
+2022-06-19 21:48:09.397 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:48:09.397 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/webjars/**']
+2022-06-19 21:48:09.415 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@71b48f2f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2d59cce9, org.springframework.security.web.context.SecurityContextPersistenceFilter@59117090, org.springframework.security.web.header.HeaderWriterFilter@223af639, org.springframework.web.filter.CorsFilter@3564757, org.springframework.security.web.authentication.logout.LogoutFilter@19453b66, com.example.filter.JwtAuthorizationFilter@113a691a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@824941b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7dda3018, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3873c4e9, org.springframework.security.web.session.SessionManagementFilter@72989ed3, org.springframework.security.web.access.ExceptionTranslationFilter@393d0b32, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@69d8171b]
+2022-06-19 21:48:09.507 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-06-19 21:48:09.631 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-06-19 21:48:09.632 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-19 21:48:09.681 [restartedMain] INFO  com.example.SystemJavaApplication - Started SystemJavaApplication in 1.246 seconds (JVM running for 3239.023)
+2022-06-19 21:48:09.682 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2022-06-19 21:48:11.217 [Thread-59] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-15} closing ...
+2022-06-19 21:48:11.218 [Thread-59] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-15} closed
+2022-06-19 21:48:11.298 [restartedMain] INFO  com.example.SystemJavaApplication - Starting SystemJavaApplication using Java 11.0.12 on LAPTOP-4LBTC9AF with PID 11944 (D:\File\java\admin-template\java-template\target\classes started by wzh in D:\File\java\admin-template\java-template)
+2022-06-19 21:48:11.298 [restartedMain] INFO  com.example.SystemJavaApplication - The following 1 profile is active: "test"
+2022-06-19 21:48:11.608 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-06-19 21:48:11.608 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+2022-06-19 21:48:11.608 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-06-19 21:48:11.608 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-06-19 21:48:11.609 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-06-19 21:48:11.609 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-19 21:48:11.609 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-19 21:48:11.609 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-19 21:48:11.627 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-19 21:48:11.627 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 328 ms
+2022-06-19 21:48:11.675 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-06-19 21:48:11.932 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-16} inited
+2022-06-19 21:48:12.271 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:48:12.271 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui.html']
+2022-06-19 21:48:12.272 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/doc.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:48:12.272 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/doc.html']
+2022-06-19 21:48:12.272 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui/*']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:48:12.272 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui/*']
+2022-06-19 21:48:12.272 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:48:12.272 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-resources/**']
+2022-06-19 21:48:12.272 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v2/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:48:12.272 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v2/api-docs']
+2022-06-19 21:48:12.272 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v3/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:48:12.272 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v3/api-docs']
+2022-06-19 21:48:12.272 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:48:12.272 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/webjars/**']
+2022-06-19 21:48:12.287 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2cd486a0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6e8bcbcc, org.springframework.security.web.context.SecurityContextPersistenceFilter@3b415dbb, org.springframework.security.web.header.HeaderWriterFilter@947971b, org.springframework.web.filter.CorsFilter@36a10c4b, org.springframework.security.web.authentication.logout.LogoutFilter@78f43d5c, com.example.filter.JwtAuthorizationFilter@3d46fe4a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@697c5442, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5c36e939, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@433febdb, org.springframework.security.web.session.SessionManagementFilter@11a09d45, org.springframework.security.web.access.ExceptionTranslationFilter@5560e1f0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@92ee53c]
+2022-06-19 21:48:12.382 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-06-19 21:48:12.539 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-06-19 21:48:12.540 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-19 21:48:12.585 [restartedMain] INFO  com.example.SystemJavaApplication - Started SystemJavaApplication in 1.308 seconds (JVM running for 3241.927)
+2022-06-19 21:48:12.586 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2022-06-19 21:48:14.577 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-19 21:48:14.578 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-06-19 21:48:14.579 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-06-19 21:49:13.054 [Thread-63] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-16} closing ...
+2022-06-19 21:49:13.055 [Thread-63] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-16} closed
+2022-06-19 21:49:13.143 [restartedMain] INFO  com.example.SystemJavaApplication - Starting SystemJavaApplication using Java 11.0.12 on LAPTOP-4LBTC9AF with PID 11944 (D:\File\java\admin-template\java-template\target\classes started by wzh in D:\File\java\admin-template\java-template)
+2022-06-19 21:49:13.143 [restartedMain] INFO  com.example.SystemJavaApplication - The following 1 profile is active: "test"
+2022-06-19 21:49:13.426 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-06-19 21:49:13.426 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+2022-06-19 21:49:13.426 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-06-19 21:49:13.426 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-06-19 21:49:13.426 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-06-19 21:49:13.426 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-19 21:49:13.427 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-19 21:49:13.427 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-19 21:49:13.438 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-19 21:49:13.438 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 294 ms
+2022-06-19 21:49:13.480 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-06-19 21:49:13.733 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-17} inited
+2022-06-19 21:49:14.058 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:49:14.058 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui.html']
+2022-06-19 21:49:14.058 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/doc.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:49:14.058 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/doc.html']
+2022-06-19 21:49:14.058 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui/*']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:49:14.058 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui/*']
+2022-06-19 21:49:14.058 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:49:14.058 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-resources/**']
+2022-06-19 21:49:14.058 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v2/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:49:14.058 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v2/api-docs']
+2022-06-19 21:49:14.058 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v3/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:49:14.059 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v3/api-docs']
+2022-06-19 21:49:14.059 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:49:14.059 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/webjars/**']
+2022-06-19 21:49:14.074 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@b69428b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1b4d1b32, org.springframework.security.web.context.SecurityContextPersistenceFilter@17b63e39, org.springframework.security.web.header.HeaderWriterFilter@7d78fc46, org.springframework.web.filter.CorsFilter@74fe232b, org.springframework.security.web.authentication.logout.LogoutFilter@ad7e2f2, com.example.filter.JwtAuthorizationFilter@e20a435, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@42220209, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@78024cc7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4bfc9466, org.springframework.security.web.session.SessionManagementFilter@350c3d99, org.springframework.security.web.access.ExceptionTranslationFilter@10f8a729, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@398c02f]
+2022-06-19 21:49:14.167 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-06-19 21:49:14.305 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-06-19 21:49:14.309 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-19 21:49:14.349 [restartedMain] INFO  com.example.SystemJavaApplication - Started SystemJavaApplication in 1.223 seconds (JVM running for 3303.691)
+2022-06-19 21:49:14.350 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2022-06-19 21:49:21.645 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-19 21:49:21.646 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-06-19 21:49:21.647 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-06-19 21:52:48.578 [Thread-67] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-17} closing ...
+2022-06-19 21:52:48.580 [Thread-67] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-17} closed
+2022-06-19 21:52:48.684 [restartedMain] INFO  com.example.SystemJavaApplication - Starting SystemJavaApplication using Java 11.0.12 on LAPTOP-4LBTC9AF with PID 11944 (D:\File\java\admin-template\java-template\target\classes started by wzh in D:\File\java\admin-template\java-template)
+2022-06-19 21:52:48.685 [restartedMain] INFO  com.example.SystemJavaApplication - The following 1 profile is active: "test"
+2022-06-19 21:52:49.005 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-06-19 21:52:49.005 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+2022-06-19 21:52:49.005 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-06-19 21:52:49.005 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-06-19 21:52:49.005 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-06-19 21:52:49.005 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-19 21:52:49.005 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-19 21:52:49.005 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-19 21:52:49.016 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-19 21:52:49.016 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 330 ms
+2022-06-19 21:52:49.060 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-06-19 21:52:49.325 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-18} inited
+2022-06-19 21:52:49.672 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:52:49.672 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui.html']
+2022-06-19 21:52:49.672 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/doc.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:52:49.672 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/doc.html']
+2022-06-19 21:52:49.672 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui/*']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:52:49.672 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui/*']
+2022-06-19 21:52:49.672 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:52:49.672 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-resources/**']
+2022-06-19 21:52:49.672 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v2/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:52:49.672 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v2/api-docs']
+2022-06-19 21:52:49.672 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v3/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:52:49.672 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v3/api-docs']
+2022-06-19 21:52:49.672 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:52:49.672 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/webjars/**']
+2022-06-19 21:52:49.688 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7c89cf72, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@63d3cf44, org.springframework.security.web.context.SecurityContextPersistenceFilter@611b0f9, org.springframework.security.web.header.HeaderWriterFilter@101da9f4, org.springframework.web.filter.CorsFilter@483ef340, org.springframework.security.web.authentication.logout.LogoutFilter@49b610b5, com.example.filter.JwtAuthorizationFilter@c25015b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@584f737f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2560238b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3de37653, org.springframework.security.web.session.SessionManagementFilter@4a05b53b, org.springframework.security.web.access.ExceptionTranslationFilter@19d8eb17, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4ebfe90d]
+2022-06-19 21:52:49.777 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-06-19 21:52:49.918 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-06-19 21:52:49.919 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-19 21:52:49.962 [restartedMain] INFO  com.example.SystemJavaApplication - Started SystemJavaApplication in 1.299 seconds (JVM running for 3519.303)
+2022-06-19 21:52:49.963 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2022-06-19 21:52:51.490 [Thread-71] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-18} closing ...
+2022-06-19 21:52:51.491 [Thread-71] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-18} closed
+2022-06-19 21:52:51.598 [restartedMain] INFO  com.example.SystemJavaApplication - Starting SystemJavaApplication using Java 11.0.12 on LAPTOP-4LBTC9AF with PID 11944 (D:\File\java\admin-template\java-template\target\classes started by wzh in D:\File\java\admin-template\java-template)
+2022-06-19 21:52:51.598 [restartedMain] INFO  com.example.SystemJavaApplication - The following 1 profile is active: "test"
+2022-06-19 21:52:51.894 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-06-19 21:52:51.894 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+2022-06-19 21:52:51.894 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-06-19 21:52:51.894 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-06-19 21:52:51.894 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-06-19 21:52:51.894 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-19 21:52:51.894 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-19 21:52:51.894 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-19 21:52:51.905 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-19 21:52:51.905 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 305 ms
+2022-06-19 21:52:51.949 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-06-19 21:52:52.193 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-19} inited
+2022-06-19 21:52:52.499 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:52:52.499 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui.html']
+2022-06-19 21:52:52.500 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/doc.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:52:52.500 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/doc.html']
+2022-06-19 21:52:52.500 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui/*']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:52:52.500 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui/*']
+2022-06-19 21:52:52.500 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:52:52.500 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-resources/**']
+2022-06-19 21:52:52.500 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v2/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:52:52.500 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v2/api-docs']
+2022-06-19 21:52:52.500 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v3/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:52:52.500 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v3/api-docs']
+2022-06-19 21:52:52.500 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:52:52.500 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/webjars/**']
+2022-06-19 21:52:52.515 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@63f65ed, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@60cc1941, org.springframework.security.web.context.SecurityContextPersistenceFilter@24f1c80b, org.springframework.security.web.header.HeaderWriterFilter@2eb43026, org.springframework.web.filter.CorsFilter@1f46a1b6, org.springframework.security.web.authentication.logout.LogoutFilter@da3bd7, com.example.filter.JwtAuthorizationFilter@1668037f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@599b80, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@fe3aead, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1a8cf8e4, org.springframework.security.web.session.SessionManagementFilter@443c3762, org.springframework.security.web.access.ExceptionTranslationFilter@31d2abce, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1da22947]
+2022-06-19 21:52:52.598 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-06-19 21:52:52.723 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-06-19 21:52:52.725 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-19 21:52:52.767 [restartedMain] INFO  com.example.SystemJavaApplication - Started SystemJavaApplication in 1.186 seconds (JVM running for 3522.109)
+2022-06-19 21:52:52.768 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2022-06-19 21:53:26.979 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-19 21:53:26.979 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-06-19 21:53:26.981 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2022-06-19 21:53:31.412 [http-nio-8080-exec-9] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.dao.DataIntegrityViolationException: <EOL><EOL>### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'message' at row 1<EOL><EOL>### The error may exist in com/example/log/dao/SystemLogDao.java (best guess)<EOL><EOL>### The error may involve com.example.log.dao.SystemLogDao.updateById-Inline<EOL><EOL>### The error occurred while setting parameters<EOL><EOL>### SQL: UPDATE system_log  SET username=?, url=?, method=?, args=?, result=?, message=?, created_time=?, class_method=?  WHERE id=?<EOL><EOL>### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'message' at row 1<EOL>; Data truncation: Data too long for column 'message' at row 1; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'message' at row 1]
+2022-06-19 21:53:34.005 [http-nio-8080-exec-10] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.dao.DataIntegrityViolationException: <EOL><EOL>### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'message' at row 1<EOL><EOL>### The error may exist in com/example/log/dao/SystemLogDao.java (best guess)<EOL><EOL>### The error may involve com.example.log.dao.SystemLogDao.updateById-Inline<EOL><EOL>### The error occurred while setting parameters<EOL><EOL>### SQL: UPDATE system_log  SET username=?, url=?, method=?, args=?, result=?, message=?, created_time=?, class_method=?  WHERE id=?<EOL><EOL>### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'message' at row 1<EOL>; Data truncation: Data too long for column 'message' at row 1; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'message' at row 1]
+2022-06-19 21:54:40.038 [Thread-75] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-19} closing ...
+2022-06-19 21:54:40.039 [Thread-75] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-19} closed
+2022-06-19 21:54:40.152 [restartedMain] INFO  com.example.SystemJavaApplication - Starting SystemJavaApplication using Java 11.0.12 on LAPTOP-4LBTC9AF with PID 11944 (D:\File\java\admin-template\java-template\target\classes started by wzh in D:\File\java\admin-template\java-template)
+2022-06-19 21:54:40.152 [restartedMain] INFO  com.example.SystemJavaApplication - The following 1 profile is active: "test"
+2022-06-19 21:54:40.438 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-06-19 21:54:40.438 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+2022-06-19 21:54:40.438 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-06-19 21:54:40.438 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-06-19 21:54:40.438 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-06-19 21:54:40.439 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-19 21:54:40.439 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-19 21:54:40.439 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-19 21:54:40.451 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-19 21:54:40.451 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 298 ms
+2022-06-19 21:54:40.500 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-06-19 21:54:40.762 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-20} inited
+2022-06-19 21:54:41.075 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:54:41.075 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui.html']
+2022-06-19 21:54:41.075 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/doc.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:54:41.075 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/doc.html']
+2022-06-19 21:54:41.075 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui/*']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:54:41.075 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui/*']
+2022-06-19 21:54:41.075 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:54:41.075 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-resources/**']
+2022-06-19 21:54:41.075 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v2/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:54:41.075 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v2/api-docs']
+2022-06-19 21:54:41.075 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v3/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:54:41.076 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v3/api-docs']
+2022-06-19 21:54:41.076 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:54:41.076 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/webjars/**']
+2022-06-19 21:54:41.091 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@79899aca, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6a4a130f, org.springframework.security.web.context.SecurityContextPersistenceFilter@4d8e4fc7, org.springframework.security.web.header.HeaderWriterFilter@62956c0d, org.springframework.web.filter.CorsFilter@46d998f, org.springframework.security.web.authentication.logout.LogoutFilter@74cdaaca, com.example.filter.JwtAuthorizationFilter@2a5dab4f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4c01c8fc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@53d2075, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@12feef44, org.springframework.security.web.session.SessionManagementFilter@a988d2d, org.springframework.security.web.access.ExceptionTranslationFilter@778ed00a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@60cb1a0a]
+2022-06-19 21:54:41.172 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-06-19 21:54:41.293 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-06-19 21:54:41.294 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-19 21:54:41.336 [restartedMain] INFO  com.example.SystemJavaApplication - Started SystemJavaApplication in 1.203 seconds (JVM running for 3630.678)
+2022-06-19 21:54:41.337 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2022-06-19 21:54:42.869 [Thread-79] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-20} closing ...
+2022-06-19 21:54:42.870 [Thread-79] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-20} closed
+2022-06-19 21:54:42.971 [restartedMain] INFO  com.example.SystemJavaApplication - Starting SystemJavaApplication using Java 11.0.12 on LAPTOP-4LBTC9AF with PID 11944 (D:\File\java\admin-template\java-template\target\classes started by wzh in D:\File\java\admin-template\java-template)
+2022-06-19 21:54:42.971 [restartedMain] INFO  com.example.SystemJavaApplication - The following 1 profile is active: "test"
+2022-06-19 21:54:43.249 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-06-19 21:54:43.249 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+2022-06-19 21:54:43.249 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-06-19 21:54:43.249 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-06-19 21:54:43.249 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-06-19 21:54:43.249 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-19 21:54:43.249 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-19 21:54:43.249 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-19 21:54:43.260 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-19 21:54:43.260 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 288 ms
+2022-06-19 21:54:43.300 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-06-19 21:54:43.531 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-21} inited
+2022-06-19 21:54:43.840 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:54:43.840 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui.html']
+2022-06-19 21:54:43.840 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/doc.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:54:43.840 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/doc.html']
+2022-06-19 21:54:43.840 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui/*']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:54:43.841 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui/*']
+2022-06-19 21:54:43.841 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:54:43.841 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-resources/**']
+2022-06-19 21:54:43.841 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v2/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:54:43.841 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v2/api-docs']
+2022-06-19 21:54:43.841 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v3/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:54:43.841 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v3/api-docs']
+2022-06-19 21:54:43.841 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:54:43.841 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/webjars/**']
+2022-06-19 21:54:43.862 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@42c61afc, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@61ff1a32, org.springframework.security.web.context.SecurityContextPersistenceFilter@40ec9004, org.springframework.security.web.header.HeaderWriterFilter@5ef8a2af, org.springframework.web.filter.CorsFilter@594f6a3, org.springframework.security.web.authentication.logout.LogoutFilter@3e19aac8, com.example.filter.JwtAuthorizationFilter@18782e9e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@21e1ab7c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3a978835, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@23f2b5bc, org.springframework.security.web.session.SessionManagementFilter@3c4644d, org.springframework.security.web.access.ExceptionTranslationFilter@49951f2a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@77799914]
+2022-06-19 21:54:43.949 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-06-19 21:54:44.072 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-06-19 21:54:44.074 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-19 21:54:44.105 [restartedMain] INFO  com.example.SystemJavaApplication - Started SystemJavaApplication in 1.152 seconds (JVM running for 3633.447)
+2022-06-19 21:54:44.106 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2022-06-19 21:54:47.051 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-19 21:54:47.052 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-06-19 21:54:47.052 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2022-06-19 21:54:47.080 [http-nio-8080-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.dao.DataIntegrityViolationException: <EOL><EOL>### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'message' at row 1<EOL><EOL>### The error may exist in com/example/log/dao/SystemLogDao.java (best guess)<EOL><EOL>### The error may involve com.example.log.dao.SystemLogDao.updateById-Inline<EOL><EOL>### The error occurred while setting parameters<EOL><EOL>### SQL: UPDATE system_log  SET username=?, url=?, method=?, args=?, result=?, message=?, created_time=?, class_method=?  WHERE id=?<EOL><EOL>### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'message' at row 1<EOL>; Data truncation: Data too long for column 'message' at row 1; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'message' at row 1]
+2022-06-19 21:55:35.276 [Thread-83] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-21} closing ...
+2022-06-19 21:55:35.277 [Thread-83] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-21} closed
+2022-06-19 21:55:35.379 [restartedMain] INFO  com.example.SystemJavaApplication - Starting SystemJavaApplication using Java 11.0.12 on LAPTOP-4LBTC9AF with PID 11944 (D:\File\java\admin-template\java-template\target\classes started by wzh in D:\File\java\admin-template\java-template)
+2022-06-19 21:55:35.379 [restartedMain] INFO  com.example.SystemJavaApplication - The following 1 profile is active: "test"
+2022-06-19 21:55:35.654 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-06-19 21:55:35.654 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+2022-06-19 21:55:35.654 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-06-19 21:55:35.654 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-06-19 21:55:35.654 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-06-19 21:55:35.655 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-19 21:55:35.655 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-19 21:55:35.655 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-19 21:55:35.665 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-19 21:55:35.665 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 285 ms
+2022-06-19 21:55:35.706 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-06-19 21:55:35.946 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-22} inited
+2022-06-19 21:55:36.275 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:55:36.275 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui.html']
+2022-06-19 21:55:36.275 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/doc.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:55:36.275 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/doc.html']
+2022-06-19 21:55:36.275 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui/*']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:55:36.275 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui/*']
+2022-06-19 21:55:36.275 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:55:36.275 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-resources/**']
+2022-06-19 21:55:36.275 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v2/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:55:36.275 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v2/api-docs']
+2022-06-19 21:55:36.275 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v3/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:55:36.275 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v3/api-docs']
+2022-06-19 21:55:36.275 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-19 21:55:36.275 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/webjars/**']
+2022-06-19 21:55:36.297 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@49e108db, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1224e77f, org.springframework.security.web.context.SecurityContextPersistenceFilter@70fc450, org.springframework.security.web.header.HeaderWriterFilter@52560e6d, org.springframework.web.filter.CorsFilter@354b5a2b, org.springframework.security.web.authentication.logout.LogoutFilter@36f84d68, com.example.filter.JwtAuthorizationFilter@2d3d756d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2beca832, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@492bfe44, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3221d49d, org.springframework.security.web.session.SessionManagementFilter@609cc3b3, org.springframework.security.web.access.ExceptionTranslationFilter@3d5223a0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5ab8a770]
+2022-06-19 21:55:36.396 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-06-19 21:55:36.526 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-06-19 21:55:36.528 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-19 21:55:36.563 [restartedMain] INFO  com.example.SystemJavaApplication - Started SystemJavaApplication in 1.201 seconds (JVM running for 3685.904)
+2022-06-19 21:55:36.564 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2022-06-19 21:55:39.998 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-19 21:55:39.999 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-06-19 21:55:40.000 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-06-19 21:55:40.029 [http-nio-8080-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.dao.DataIntegrityViolationException: <EOL><EOL>### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'message' at row 1<EOL><EOL>### The error may exist in com/example/log/dao/SystemLogDao.java (best guess)<EOL><EOL>### The error may involve com.example.log.dao.SystemLogDao.updateById-Inline<EOL><EOL>### The error occurred while setting parameters<EOL><EOL>### SQL: UPDATE system_log  SET username=?, url=?, method=?, args=?, result=?, message=?, created_time=?, class_method=?  WHERE id=?<EOL><EOL>### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'message' at row 1<EOL>; Data truncation: Data too long for column 'message' at row 1; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'message' at row 1]

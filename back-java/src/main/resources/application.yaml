@@ -1,0 +1,20 @@
+spring:
+  main:
+    allow-circular-references: true
+  sql:
+    init:
+      platform: mysql
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/projectv1?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: 123456
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+logging:
+  config: classpath:logback-spring.xml

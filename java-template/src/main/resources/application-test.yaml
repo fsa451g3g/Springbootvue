@@ -1,0 +1,62 @@
+spring:
+  main:
+    allow-circular-references: true
+  sql:
+    init:
+      platform: mysql
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/admin-template?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: 123456
+    druid:
+      initialSize: 5
+      minIdle: 10
+      maxActive: 20
+      maxWait: 60000
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: SELECT 1 FROM dual
+      testWhileIdle: true
+      testOnBorrow: true
+      testOnReturn: false
+      poolPreparedStatements: false
+      maxOpenPreparedStatements: 50
+      filter:
+        stat:
+          enabled: true
+          log-slow-sql: true
+          slow-sql-millis: 1000
+        wall:
+          enabled: true
+          log-violation: true
+          throw-exception: false
+          config:
+            delete-where-none-check: true
+      web-stat-filter:
+        enabled: true
+        exclusions: /druid/*,*.js,*.gif,*.jpg,*.bmp,*.png,*.css,*.ico
+        url-pattern: /*
+      stat-view-servlet:
+        enabled: true
+        login-username: admin
+        login-password: admin
+        url-pattern: /druid/*
+        allow: 127.0.0.1
+#  flyway:
+#    enabled: false
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: ASSIGN_UUID
+      logic-delete-value: false
+      logic-not-delete-value: true
+logging:
+  config: classpath:logback-spring.xml

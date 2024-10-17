@@ -1,0 +1,25 @@
+2024-10-15 11:24:10.212 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-10-15 11:24:10.328 [main] INFO  com.example.BackJavaApplicationTests - Starting BackJavaApplicationTests using Java 21.0.4 with PID 13212 (started by WZH in F:\workspace\springboot-vue-projectv1\back-java)
+2024-10-15 11:24:10.330 [main] INFO  com.example.BackJavaApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2024-10-15 11:24:14.377 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userServiceImpl
+2024-10-15 11:24:16.470 [main] INFO  com.example.BackJavaApplicationTests - Started BackJavaApplicationTests in 7.054 seconds (process running for 9.172)
+2024-10-15 19:44:53.145 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-10-15 19:44:53.197 [main] INFO  com.example.BackJavaApplicationTests - Starting BackJavaApplicationTests using Java 21.0.4 with PID 12488 (started by WZH in F:\workspace\springboot-vue-projectv1\back-java)
+2024-10-15 19:44:53.198 [main] INFO  com.example.BackJavaApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2024-10-15 19:44:55.054 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userServiceImpl
+2024-10-15 19:44:56.053 [main] INFO  com.example.BackJavaApplicationTests - Started BackJavaApplicationTests in 3.268 seconds (process running for 4.255)
+2024-10-15 19:44:56.838 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-15 19:44:56.964 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4769537a
+2024-10-15 19:44:56.965 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-15 19:44:57.015 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-10-15 19:44:57.021 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-10-15 19:45:42.608 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-10-15 19:45:42.652 [main] INFO  com.example.BackJavaApplicationTests - Starting BackJavaApplicationTests using Java 21.0.4 with PID 7248 (started by WZH in F:\workspace\springboot-vue-projectv1\back-java)
+2024-10-15 19:45:42.653 [main] INFO  com.example.BackJavaApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2024-10-15 19:45:44.579 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userServiceImpl
+2024-10-15 19:45:45.559 [main] INFO  com.example.BackJavaApplicationTests - Started BackJavaApplicationTests in 3.328 seconds (process running for 4.151)
+2024-10-15 19:45:46.224 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-15 19:45:46.349 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@53d2b827
+2024-10-15 19:45:46.351 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-15 19:45:46.398 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-10-15 19:45:46.403 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

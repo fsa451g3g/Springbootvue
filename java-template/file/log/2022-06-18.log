@@ -1,0 +1,865 @@
+2022-06-18 15:03:06.969 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2022-06-18 15:03:06.979 [restartedMain] INFO  com.example.SystemJavaApplication - Starting SystemJavaApplication using Java 11.0.12 on LAPTOP-4LBTC9AF with PID 20972 (D:\File\java\admin-template\java-template\target\classes started by wzh in D:\File\java\admin-template\java-template)
+2022-06-18 15:03:06.980 [restartedMain] INFO  com.example.SystemJavaApplication - The following 1 profile is active: "test"
+2022-06-18 15:03:07.012 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-18 15:03:07.012 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-18 15:03:08.229 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-06-18 15:03:08.230 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+2022-06-18 15:03:08.230 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-06-18 15:03:08.230 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-06-18 15:03:08.240 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-06-18 15:03:08.247 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-18 15:03:08.247 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-18 15:03:08.247 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-18 15:03:08.342 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-18 15:03:08.342 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1330 ms
+2022-06-18 15:03:08.505 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-06-18 15:03:08.902 [restartedMain] ERROR com.alibaba.druid.pool.DruidDataSource - init datasource error, url: jdbc:mysql://127.0.0.1:3306/admin-template?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:828)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:448)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:227)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1654)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1718)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:914)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1930)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1872)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1707)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1452)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:759)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:719)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.example.SystemJavaApplication.main(SystemJavaApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: com.mysql.cj.exceptions.UnableToConnectException: Public Key Retrieval is not allowed
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:85)
+	at com.mysql.cj.protocol.a.authentication.CachingSha2PasswordPlugin.nextAuthenticationStep(CachingSha2PasswordPlugin.java:130)
+	at com.mysql.cj.protocol.a.authentication.CachingSha2PasswordPlugin.nextAuthenticationStep(CachingSha2PasswordPlugin.java:49)
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(NativeAuthenticationProvider.java:447)
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.connect(NativeAuthenticationProvider.java:212)
+	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1433)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:133)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:948)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:818)
+	... 91 common frames omitted
+2022-06-18 15:03:08.905 [restartedMain] ERROR com.alibaba.druid.pool.DruidDataSource - {dataSource-1} init error
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:828)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:448)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:227)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1654)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1718)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:914)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1930)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1872)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1707)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1452)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:759)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:719)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.example.SystemJavaApplication.main(SystemJavaApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: com.mysql.cj.exceptions.UnableToConnectException: Public Key Retrieval is not allowed
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:85)
+	at com.mysql.cj.protocol.a.authentication.CachingSha2PasswordPlugin.nextAuthenticationStep(CachingSha2PasswordPlugin.java:130)
+	at com.mysql.cj.protocol.a.authentication.CachingSha2PasswordPlugin.nextAuthenticationStep(CachingSha2PasswordPlugin.java:49)
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(NativeAuthenticationProvider.java:447)
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.connect(NativeAuthenticationProvider.java:212)
+	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1433)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:133)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:948)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:818)
+	... 91 common frames omitted
+2022-06-18 15:03:08.906 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2022-06-18 15:03:08.909 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'systemLog': Unsatisfied dependency expressed through method 'setSystemLogDao' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'systemLogDao' defined in file [D:\File\java\admin-template\java-template\target\classes\com\example\log\dao\SystemLogDao.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionTemplate' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/alibaba/druid/spring/boot/autoconfigure/DruidDataSourceAutoConfigure.class]: Invocation of init method failed; nested exception is java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+2022-06-18 15:03:08.909 [Druid-ConnectionPool-Create-4279036] ERROR com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://127.0.0.1:3306/admin-template?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:828)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:448)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:227)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1654)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1718)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2785)
+Caused by: com.mysql.cj.exceptions.UnableToConnectException: Public Key Retrieval is not allowed
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:85)
+	at com.mysql.cj.protocol.a.authentication.CachingSha2PasswordPlugin.nextAuthenticationStep(CachingSha2PasswordPlugin.java:130)
+	at com.mysql.cj.protocol.a.authentication.CachingSha2PasswordPlugin.nextAuthenticationStep(CachingSha2PasswordPlugin.java:49)
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(NativeAuthenticationProvider.java:447)
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.connect(NativeAuthenticationProvider.java:212)
+	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1433)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:133)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:948)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:818)
+	... 11 common frames omitted
+2022-06-18 15:03:08.910 [Druid-ConnectionPool-Create-4279036] ERROR com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://127.0.0.1:3306/admin-template?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:828)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:448)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:227)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1654)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1718)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2785)
+Caused by: com.mysql.cj.exceptions.UnableToConnectException: Public Key Retrieval is not allowed
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:85)
+	at com.mysql.cj.protocol.a.authentication.CachingSha2PasswordPlugin.nextAuthenticationStep(CachingSha2PasswordPlugin.java:130)
+	at com.mysql.cj.protocol.a.authentication.CachingSha2PasswordPlugin.nextAuthenticationStep(CachingSha2PasswordPlugin.java:49)
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(NativeAuthenticationProvider.java:447)
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.connect(NativeAuthenticationProvider.java:212)
+	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1433)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:133)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:948)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:818)
+	... 11 common frames omitted
+2022-06-18 15:03:08.910 [Druid-ConnectionPool-Create-4279036] INFO  com.alibaba.druid.pool.DruidAbstractDataSource - {dataSource-1} failContinuous is true
+2022-06-18 15:03:08.911 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2022-06-18 15:03:08.921 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-06-18 15:03:08.937 [restartedMain] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'systemLog': Unsatisfied dependency expressed through method 'setSystemLogDao' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'systemLogDao' defined in file [D:\File\java\admin-template\java-template\target\classes\com\example\log\dao\SystemLogDao.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionTemplate' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/alibaba/druid/spring/boot/autoconfigure/DruidDataSourceAutoConfigure.class]: Invocation of init method failed; nested exception is java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:767)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:719)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.example.SystemJavaApplication.main(SystemJavaApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'systemLogDao' defined in file [D:\File\java\admin-template\java-template\target\classes\com\example\log\dao\SystemLogDao.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionTemplate' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/alibaba/druid/spring/boot/autoconfigure/DruidDataSourceAutoConfigure.class]: Invocation of init method failed; nested exception is java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1707)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1452)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:759)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionTemplate' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/alibaba/druid/spring/boot/autoconfigure/DruidDataSourceAutoConfigure.class]: Invocation of init method failed; nested exception is java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330)
+	... 38 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/alibaba/druid/spring/boot/autoconfigure/DruidDataSourceAutoConfigure.class]: Invocation of init method failed; nested exception is java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 48 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/alibaba/druid/spring/boot/autoconfigure/DruidDataSourceAutoConfigure.class]: Invocation of init method failed; nested exception is java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 62 common frames omitted
+Caused by: java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:828)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:448)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:227)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1654)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1718)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:914)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1930)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1872)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 73 common frames omitted
+Caused by: com.mysql.cj.exceptions.UnableToConnectException: Public Key Retrieval is not allowed
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:85)
+	at com.mysql.cj.protocol.a.authentication.CachingSha2PasswordPlugin.nextAuthenticationStep(CachingSha2PasswordPlugin.java:130)
+	at com.mysql.cj.protocol.a.authentication.CachingSha2PasswordPlugin.nextAuthenticationStep(CachingSha2PasswordPlugin.java:49)
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(NativeAuthenticationProvider.java:447)
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.connect(NativeAuthenticationProvider.java:212)
+	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1433)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:133)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:948)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:818)
+	... 91 common frames omitted
+2022-06-18 15:03:48.898 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2022-06-18 15:03:48.903 [restartedMain] INFO  com.example.SystemJavaApplication - Starting SystemJavaApplication using Java 11.0.12 on LAPTOP-4LBTC9AF with PID 11060 (D:\File\java\admin-template\java-template\target\classes started by wzh in D:\File\java\admin-template\java-template)
+2022-06-18 15:03:48.904 [restartedMain] INFO  com.example.SystemJavaApplication - The following 1 profile is active: "test"
+2022-06-18 15:03:48.925 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-18 15:03:48.925 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-18 15:03:49.894 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-06-18 15:03:49.895 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+2022-06-18 15:03:49.895 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-06-18 15:03:49.895 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-06-18 15:03:49.899 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-06-18 15:03:49.904 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-18 15:03:49.904 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-18 15:03:49.904 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-18 15:03:49.963 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-18 15:03:49.963 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1038 ms
+2022-06-18 15:03:50.095 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-06-18 15:03:50.500 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2022-06-18 15:03:51.341 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:03:51.342 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui.html']
+2022-06-18 15:03:51.342 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/doc.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:03:51.342 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/doc.html']
+2022-06-18 15:03:51.342 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui/*']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:03:51.342 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui/*']
+2022-06-18 15:03:51.342 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:03:51.342 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-resources/**']
+2022-06-18 15:03:51.342 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v2/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:03:51.342 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v2/api-docs']
+2022-06-18 15:03:51.342 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v3/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:03:51.342 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v3/api-docs']
+2022-06-18 15:03:51.342 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:03:51.342 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/webjars/**']
+2022-06-18 15:03:51.369 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@72ad7919, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@704b284c, org.springframework.security.web.context.SecurityContextPersistenceFilter@9f7b81, org.springframework.security.web.header.HeaderWriterFilter@64cd2637, org.springframework.web.filter.CorsFilter@84d7342, org.springframework.security.web.authentication.logout.LogoutFilter@2e8e0491, com.example.filter.JwtAuthorizationFilter@57bb0ace, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@157a9901, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@333d2817, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4a472dc5, org.springframework.security.web.session.SessionManagementFilter@287d6f4e, org.springframework.security.web.access.ExceptionTranslationFilter@48c5ec28, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6ed6a029]
+2022-06-18 15:03:51.521 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-06-18 15:03:51.763 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-06-18 15:03:51.775 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-18 15:03:51.942 [restartedMain] INFO  com.example.SystemJavaApplication - Started SystemJavaApplication in 3.327 seconds (JVM running for 11.882)
+2022-06-18 15:03:57.539 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-18 15:03:57.539 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-06-18 15:03:57.540 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-06-18 15:05:02.232 [http-nio-8080-exec-4] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/admin-template?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC, version : 1.2.4, lastPacketReceivedIdleMillis : 64377
+2022-06-18 15:05:02.233 [http-nio-8080-exec-4] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/admin-template?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC, version : 1.2.4, lastPacketReceivedIdleMillis : 71739
+2022-06-18 15:05:02.234 [http-nio-8080-exec-4] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/admin-template?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC, version : 1.2.4, lastPacketReceivedIdleMillis : 71743
+2022-06-18 15:05:02.235 [http-nio-8080-exec-4] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/admin-template?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC, version : 1.2.4, lastPacketReceivedIdleMillis : 71747
+2022-06-18 15:07:12.129 [http-nio-8080-exec-4] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/admin-template?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC, version : 1.2.4, lastPacketReceivedIdleMillis : 93677
+2022-06-18 15:07:12.130 [http-nio-8080-exec-4] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/admin-template?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC, version : 1.2.4, lastPacketReceivedIdleMillis : 129885
+2022-06-18 15:08:50.084 [http-nio-8080-exec-2] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/admin-template?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC, version : 1.2.4, lastPacketReceivedIdleMillis : 97943
+2022-06-18 15:09:35.527 [Thread-4] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2022-06-18 15:09:35.528 [Thread-4] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2022-06-18 15:09:35.606 [restartedMain] INFO  com.example.SystemJavaApplication - Starting SystemJavaApplication using Java 11.0.12 on LAPTOP-4LBTC9AF with PID 11060 (D:\File\java\admin-template\java-template\target\classes started by wzh in D:\File\java\admin-template\java-template)
+2022-06-18 15:09:35.607 [restartedMain] INFO  com.example.SystemJavaApplication - The following 1 profile is active: "test"
+2022-06-18 15:09:35.947 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-06-18 15:09:35.947 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+2022-06-18 15:09:35.947 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-06-18 15:09:35.948 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-06-18 15:09:35.948 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-06-18 15:09:35.948 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-18 15:09:35.948 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-18 15:09:35.948 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-18 15:09:35.961 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-18 15:09:35.961 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 353 ms
+2022-06-18 15:09:36.010 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-06-18 15:09:36.255 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-2} inited
+2022-06-18 15:09:36.563 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:09:36.563 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui.html']
+2022-06-18 15:09:36.563 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/doc.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:09:36.563 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/doc.html']
+2022-06-18 15:09:36.563 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui/*']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:09:36.563 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui/*']
+2022-06-18 15:09:36.563 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:09:36.563 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-resources/**']
+2022-06-18 15:09:36.563 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v2/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:09:36.563 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v2/api-docs']
+2022-06-18 15:09:36.563 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v3/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:09:36.563 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v3/api-docs']
+2022-06-18 15:09:36.563 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:09:36.563 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/webjars/**']
+2022-06-18 15:09:36.579 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@10635d01, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4bec0d72, org.springframework.security.web.context.SecurityContextPersistenceFilter@5727dc3e, org.springframework.security.web.header.HeaderWriterFilter@44c17916, org.springframework.web.filter.CorsFilter@48480436, org.springframework.security.web.authentication.logout.LogoutFilter@a1694b0, com.example.filter.JwtAuthorizationFilter@96b1475, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e7e2d4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4da12257, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@37990202, org.springframework.security.web.session.SessionManagementFilter@4b8cb759, org.springframework.security.web.access.ExceptionTranslationFilter@335cc93f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1854c311]
+2022-06-18 15:09:36.667 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-06-18 15:09:36.798 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-06-18 15:09:36.799 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-18 15:09:36.853 [restartedMain] INFO  com.example.SystemJavaApplication - Started SystemJavaApplication in 1.278 seconds (JVM running for 356.793)
+2022-06-18 15:09:36.854 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2022-06-18 15:09:38.370 [Thread-7] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-2} closing ...
+2022-06-18 15:09:38.371 [Thread-7] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-2} closed
+2022-06-18 15:09:38.430 [restartedMain] INFO  com.example.SystemJavaApplication - Starting SystemJavaApplication using Java 11.0.12 on LAPTOP-4LBTC9AF with PID 11060 (D:\File\java\admin-template\java-template\target\classes started by wzh in D:\File\java\admin-template\java-template)
+2022-06-18 15:09:38.430 [restartedMain] INFO  com.example.SystemJavaApplication - The following 1 profile is active: "test"
+2022-06-18 15:09:38.724 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-06-18 15:09:38.724 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+2022-06-18 15:09:38.724 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-06-18 15:09:38.724 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-06-18 15:09:38.725 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-06-18 15:09:38.725 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-18 15:09:38.725 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-18 15:09:38.725 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-18 15:09:38.738 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-18 15:09:38.738 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 305 ms
+2022-06-18 15:09:38.784 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-06-18 15:09:39.028 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-3} inited
+2022-06-18 15:09:39.328 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:09:39.328 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui.html']
+2022-06-18 15:09:39.328 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/doc.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:09:39.328 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/doc.html']
+2022-06-18 15:09:39.328 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui/*']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:09:39.328 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui/*']
+2022-06-18 15:09:39.328 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:09:39.328 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-resources/**']
+2022-06-18 15:09:39.328 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v2/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:09:39.328 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v2/api-docs']
+2022-06-18 15:09:39.328 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v3/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:09:39.328 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v3/api-docs']
+2022-06-18 15:09:39.328 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:09:39.328 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/webjars/**']
+2022-06-18 15:09:39.343 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2212ff18, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@49e296fc, org.springframework.security.web.context.SecurityContextPersistenceFilter@55948e9c, org.springframework.security.web.header.HeaderWriterFilter@3802cdca, org.springframework.web.filter.CorsFilter@5a8ac488, org.springframework.security.web.authentication.logout.LogoutFilter@60c4bd0b, com.example.filter.JwtAuthorizationFilter@e043176, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1660adbb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@38a24e20, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@395f3416, org.springframework.security.web.session.SessionManagementFilter@4cacae41, org.springframework.security.web.access.ExceptionTranslationFilter@7907561b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@42aea848]
+2022-06-18 15:09:39.428 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-06-18 15:09:39.551 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-06-18 15:09:39.553 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-18 15:09:39.603 [restartedMain] INFO  com.example.SystemJavaApplication - Started SystemJavaApplication in 1.196 seconds (JVM running for 359.543)
+2022-06-18 15:09:39.604 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2022-06-18 15:09:46.997 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-18 15:09:46.998 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-06-18 15:09:46.998 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2022-06-18 15:12:49.230 [Thread-11] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-3} closing ...
+2022-06-18 15:12:49.231 [Thread-11] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-3} closed
+2022-06-18 15:12:49.286 [restartedMain] INFO  com.example.SystemJavaApplication - Starting SystemJavaApplication using Java 11.0.12 on LAPTOP-4LBTC9AF with PID 11060 (D:\File\java\admin-template\java-template\target\classes started by wzh in D:\File\java\admin-template\java-template)
+2022-06-18 15:12:49.287 [restartedMain] INFO  com.example.SystemJavaApplication - The following 1 profile is active: "test"
+2022-06-18 15:12:49.538 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-06-18 15:12:49.538 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+2022-06-18 15:12:49.538 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-06-18 15:12:49.538 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-06-18 15:12:49.539 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-06-18 15:12:49.539 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-18 15:12:49.539 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-18 15:12:49.539 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-18 15:12:49.549 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-18 15:12:49.549 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 261 ms
+2022-06-18 15:12:49.592 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-06-18 15:12:49.836 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-4} inited
+2022-06-18 15:12:50.139 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:12:50.139 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui.html']
+2022-06-18 15:12:50.139 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/doc.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:12:50.139 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/doc.html']
+2022-06-18 15:12:50.139 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui/*']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:12:50.139 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui/*']
+2022-06-18 15:12:50.139 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:12:50.139 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-resources/**']
+2022-06-18 15:12:50.139 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v2/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:12:50.140 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v2/api-docs']
+2022-06-18 15:12:50.140 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v3/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:12:50.140 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v3/api-docs']
+2022-06-18 15:12:50.140 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:12:50.140 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/webjars/**']
+2022-06-18 15:12:50.155 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@51bf0e63, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@42694bdb, org.springframework.security.web.context.SecurityContextPersistenceFilter@5228a91, org.springframework.security.web.header.HeaderWriterFilter@744a697a, org.springframework.web.filter.CorsFilter@2e4e6a64, org.springframework.security.web.authentication.logout.LogoutFilter@267484dd, com.example.filter.JwtAuthorizationFilter@20e6506f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@964551f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2ec2ecf0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7bc4f864, org.springframework.security.web.session.SessionManagementFilter@2b364fc3, org.springframework.security.web.access.ExceptionTranslationFilter@17237d2f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@41d34542]
+2022-06-18 15:12:50.243 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-06-18 15:12:50.381 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-06-18 15:12:50.382 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-18 15:12:50.429 [restartedMain] INFO  com.example.SystemJavaApplication - Started SystemJavaApplication in 1.163 seconds (JVM running for 550.369)
+2022-06-18 15:12:50.430 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2022-06-18 15:12:52.076 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-18 15:12:52.077 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-06-18 15:12:52.079 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2022-06-18 15:13:06.095 [http-nio-8080-exec-3] ERROR com.alibaba.druid.wall.WallFilter - sql injection violation, dbType mysql, druid-version 1.2.4, delete none condition not allow : DELETE FROM system_log
+2022-06-18 15:16:05.824 [http-nio-8080-exec-2] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/admin-template?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC, version : 1.2.4, lastPacketReceivedIdleMillis : 193622
+2022-06-18 15:16:05.825 [http-nio-8080-exec-2] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/admin-template?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC, version : 1.2.4, lastPacketReceivedIdleMillis : 195992
+2022-06-18 15:16:05.825 [http-nio-8080-exec-2] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/admin-template?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC, version : 1.2.4, lastPacketReceivedIdleMillis : 195995
+2022-06-18 15:16:05.827 [http-nio-8080-exec-2] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/admin-template?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC, version : 1.2.4, lastPacketReceivedIdleMillis : 195999
+2022-06-18 15:29:11.141 [Thread-15] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-4} closing ...
+2022-06-18 15:29:11.142 [Thread-15] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-4} closed
+2022-06-18 15:29:11.210 [restartedMain] INFO  com.example.SystemJavaApplication - Starting SystemJavaApplication using Java 11.0.12 on LAPTOP-4LBTC9AF with PID 11060 (D:\File\java\admin-template\java-template\target\classes started by wzh in D:\File\java\admin-template\java-template)
+2022-06-18 15:29:11.210 [restartedMain] INFO  com.example.SystemJavaApplication - The following 1 profile is active: "test"
+2022-06-18 15:29:11.505 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-06-18 15:29:11.505 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+2022-06-18 15:29:11.505 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-06-18 15:29:11.505 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-06-18 15:29:11.505 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-06-18 15:29:11.506 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-18 15:29:11.506 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-18 15:29:11.506 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-18 15:29:11.518 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-18 15:29:11.518 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 307 ms
+2022-06-18 15:29:11.582 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-06-18 15:29:11.849 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-5} inited
+2022-06-18 15:29:12.212 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:29:12.213 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui.html']
+2022-06-18 15:29:12.213 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/doc.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:29:12.213 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/doc.html']
+2022-06-18 15:29:12.213 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui/*']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:29:12.213 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui/*']
+2022-06-18 15:29:12.213 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:29:12.213 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-resources/**']
+2022-06-18 15:29:12.213 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v2/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:29:12.213 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v2/api-docs']
+2022-06-18 15:29:12.213 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v3/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:29:12.213 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v3/api-docs']
+2022-06-18 15:29:12.213 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:29:12.213 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/webjars/**']
+2022-06-18 15:29:12.233 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7db6e585, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4715330f, org.springframework.security.web.context.SecurityContextPersistenceFilter@27ed224b, org.springframework.security.web.header.HeaderWriterFilter@18f8d341, org.springframework.web.filter.CorsFilter@72b3edd2, org.springframework.security.web.authentication.logout.LogoutFilter@364abd23, com.example.filter.JwtAuthorizationFilter@59a34fe0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3db7e331, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@630b5d1d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@987eb55, org.springframework.security.web.session.SessionManagementFilter@18006d6c, org.springframework.security.web.access.ExceptionTranslationFilter@7eec8592, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@24ae9b4a]
+2022-06-18 15:29:12.361 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-06-18 15:29:12.518 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-06-18 15:29:12.519 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-18 15:29:12.572 [restartedMain] INFO  com.example.SystemJavaApplication - Started SystemJavaApplication in 1.384 seconds (JVM running for 1532.512)
+2022-06-18 15:29:12.574 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2022-06-18 15:30:25.886 [Thread-19] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-5} closing ...
+2022-06-18 15:30:25.888 [Thread-19] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-5} closed
+2022-06-18 15:30:25.959 [restartedMain] INFO  com.example.SystemJavaApplication - Starting SystemJavaApplication using Java 11.0.12 on LAPTOP-4LBTC9AF with PID 11060 (D:\File\java\admin-template\java-template\target\classes started by wzh in D:\File\java\admin-template\java-template)
+2022-06-18 15:30:25.959 [restartedMain] INFO  com.example.SystemJavaApplication - The following 1 profile is active: "test"
+2022-06-18 15:30:26.234 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-06-18 15:30:26.234 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+2022-06-18 15:30:26.234 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-06-18 15:30:26.234 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-06-18 15:30:26.234 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-06-18 15:30:26.234 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-18 15:30:26.235 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-18 15:30:26.235 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-18 15:30:26.245 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-18 15:30:26.245 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 285 ms
+2022-06-18 15:30:26.285 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-06-18 15:30:26.530 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-6} inited
+2022-06-18 15:30:26.870 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:30:26.870 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui.html']
+2022-06-18 15:30:26.870 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/doc.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:30:26.870 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/doc.html']
+2022-06-18 15:30:26.870 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui/*']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:30:26.870 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui/*']
+2022-06-18 15:30:26.871 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:30:26.871 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-resources/**']
+2022-06-18 15:30:26.871 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v2/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:30:26.871 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v2/api-docs']
+2022-06-18 15:30:26.871 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v3/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:30:26.871 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v3/api-docs']
+2022-06-18 15:30:26.871 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:30:26.871 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/webjars/**']
+2022-06-18 15:30:26.893 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@39ffacb8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@34ab6d98, org.springframework.security.web.context.SecurityContextPersistenceFilter@370fba7b, org.springframework.security.web.header.HeaderWriterFilter@1943ae20, org.springframework.web.filter.CorsFilter@2a9f0846, org.springframework.security.web.authentication.logout.LogoutFilter@6e2e26cc, com.example.filter.JwtAuthorizationFilter@41a796c2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@545fbaa7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@50692ca2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4c8ee6d2, org.springframework.security.web.session.SessionManagementFilter@5e8f62, org.springframework.security.web.access.ExceptionTranslationFilter@189f6598, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@11c38ce8]
+2022-06-18 15:30:26.998 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-06-18 15:30:27.127 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-06-18 15:30:27.129 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-18 15:30:27.192 [restartedMain] INFO  com.example.SystemJavaApplication - Started SystemJavaApplication in 1.257 seconds (JVM running for 1607.131)
+2022-06-18 15:30:27.193 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2022-06-18 15:32:53.509 [Thread-23] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-6} closing ...
+2022-06-18 15:32:53.512 [Thread-23] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-6} closed
+2022-06-18 15:32:53.599 [restartedMain] INFO  com.example.SystemJavaApplication - Starting SystemJavaApplication using Java 11.0.12 on LAPTOP-4LBTC9AF with PID 11060 (D:\File\java\admin-template\java-template\target\classes started by wzh in D:\File\java\admin-template\java-template)
+2022-06-18 15:32:53.599 [restartedMain] INFO  com.example.SystemJavaApplication - The following 1 profile is active: "test"
+2022-06-18 15:32:53.964 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-06-18 15:32:53.964 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+2022-06-18 15:32:53.964 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-06-18 15:32:53.964 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-06-18 15:32:53.964 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-06-18 15:32:53.965 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-18 15:32:53.965 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-18 15:32:53.965 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-18 15:32:53.981 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-18 15:32:53.981 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 381 ms
+2022-06-18 15:32:54.064 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-06-18 15:32:54.413 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-7} inited
+2022-06-18 15:32:54.741 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:32:54.741 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui.html']
+2022-06-18 15:32:54.741 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/doc.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:32:54.741 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/doc.html']
+2022-06-18 15:32:54.741 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui/*']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:32:54.741 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui/*']
+2022-06-18 15:32:54.741 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:32:54.741 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-resources/**']
+2022-06-18 15:32:54.741 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v2/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:32:54.742 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v2/api-docs']
+2022-06-18 15:32:54.742 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v3/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:32:54.742 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v3/api-docs']
+2022-06-18 15:32:54.742 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:32:54.742 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/webjars/**']
+2022-06-18 15:32:54.759 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3c642301, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@25da239a, org.springframework.security.web.context.SecurityContextPersistenceFilter@c6a8139, org.springframework.security.web.header.HeaderWriterFilter@7140d9b4, org.springframework.web.filter.CorsFilter@40ea1ec3, org.springframework.security.web.authentication.logout.LogoutFilter@c634b72, com.example.filter.JwtAuthorizationFilter@53cad8e9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@441174d1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@33eb889e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@9a280c4, org.springframework.security.web.session.SessionManagementFilter@101ef95b, org.springframework.security.web.access.ExceptionTranslationFilter@1e8ac732, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4433c034]
+2022-06-18 15:32:54.863 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-06-18 15:32:55.013 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-06-18 15:32:55.015 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-18 15:32:55.058 [restartedMain] INFO  com.example.SystemJavaApplication - Started SystemJavaApplication in 1.487 seconds (JVM running for 1754.997)
+2022-06-18 15:32:55.059 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2022-06-18 15:32:56.577 [Thread-27] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-7} closing ...
+2022-06-18 15:32:56.579 [Thread-27] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-7} closed
+2022-06-18 15:32:56.650 [restartedMain] INFO  com.example.SystemJavaApplication - Starting SystemJavaApplication using Java 11.0.12 on LAPTOP-4LBTC9AF with PID 11060 (D:\File\java\admin-template\java-template\target\classes started by wzh in D:\File\java\admin-template\java-template)
+2022-06-18 15:32:56.650 [restartedMain] INFO  com.example.SystemJavaApplication - The following 1 profile is active: "test"
+2022-06-18 15:32:56.960 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-06-18 15:32:56.960 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+2022-06-18 15:32:56.960 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-06-18 15:32:56.960 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-06-18 15:32:56.960 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-06-18 15:32:56.960 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-18 15:32:56.960 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-18 15:32:56.960 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-18 15:32:56.976 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-18 15:32:56.976 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 325 ms
+2022-06-18 15:32:57.028 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-06-18 15:32:57.345 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-8} inited
+2022-06-18 15:32:57.693 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:32:57.693 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui.html']
+2022-06-18 15:32:57.693 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/doc.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:32:57.693 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/doc.html']
+2022-06-18 15:32:57.693 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui/*']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:32:57.693 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui/*']
+2022-06-18 15:32:57.693 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:32:57.693 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-resources/**']
+2022-06-18 15:32:57.693 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v2/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:32:57.693 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v2/api-docs']
+2022-06-18 15:32:57.693 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v3/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:32:57.693 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/v3/api-docs']
+2022-06-18 15:32:57.693 [restartedMain] WARN  o.s.s.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-18 15:32:57.693 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/webjars/**']
+2022-06-18 15:32:57.715 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7c6d8448, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6a284d23, org.springframework.security.web.context.SecurityContextPersistenceFilter@114321a3, org.springframework.security.web.header.HeaderWriterFilter@33c23df7, org.springframework.web.filter.CorsFilter@549af91c, org.springframework.security.web.authentication.logout.LogoutFilter@12df25f5, com.example.filter.JwtAuthorizationFilter@2e881fed, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2b318088, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@9be3d9c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5ddf1434, org.springframework.security.web.session.SessionManagementFilter@627e395e, org.springframework.security.web.access.ExceptionTranslationFilter@23932b68, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5af53a22]
+2022-06-18 15:32:57.821 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-06-18 15:32:57.953 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-06-18 15:32:57.954 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-18 15:32:58.004 [restartedMain] INFO  com.example.SystemJavaApplication - Started SystemJavaApplication in 1.375 seconds (JVM running for 1757.944)
+2022-06-18 15:32:58.005 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2022-06-18 15:34:59.026 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-18 15:34:59.027 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-06-18 15:34:59.028 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-06-18 15:34:59.034 [http-nio-8080-exec-2] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/admin-template?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC, version : 1.2.4, lastPacketReceivedIdleMillis : 121690
+2022-06-18 15:34:59.035 [http-nio-8080-exec-2] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/admin-template?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC, version : 1.2.4, lastPacketReceivedIdleMillis : 121693
+2022-06-18 15:34:59.037 [http-nio-8080-exec-2] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/admin-template?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC, version : 1.2.4, lastPacketReceivedIdleMillis : 121696
+2022-06-18 15:34:59.037 [http-nio-8080-exec-2] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/admin-template?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC, version : 1.2.4, lastPacketReceivedIdleMillis : 121698
+2022-06-18 15:34:59.038 [http-nio-8080-exec-2] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/admin-template?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC, version : 1.2.4, lastPacketReceivedIdleMillis : 121700
+2022-06-18 15:34:59.077 [http-nio-8080-exec-2] WARN  c.b.m.e.plugins.inner.PaginationInnerInterceptor - optimize this sql to a count sql has exception, sql:"SELECT  id,username,nickname,password,tel,email,account_non_locked,enabled,created_time,updated_time  FROM user 
+ 
+ WHERE (id IN () AND enabled = ?)", exception:
+net.sf.jsqlparser.parser.ParseException: Encountered unexpected token: "IN" "IN"
+    at line 3, column 12.
+
+Was expecting one of:
+
+    "&"
+    ")"
+    "::"
+    "<<"
+    ">>"
+    "COLLATE"
+    "["
+    "^"
+    "|"
+
+2022-06-18 15:34:59.140 [http-nio-8080-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.dao.DataIntegrityViolationException: <EOL><EOL>### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'message' at row 1<EOL><EOL>### The error may exist in com/example/log/dao/SystemLogDao.java (best guess)<EOL><EOL>### The error may involve com.example.log.dao.SystemLogDao.updateById-Inline<EOL><EOL>### The error occurred while setting parameters<EOL><EOL>### SQL: UPDATE system_log  SET username=?, url=?, method=?, args=?, result=?, message=?, created_time=?, class_method=?  WHERE id=?<EOL><EOL>### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'message' at row 1<EOL>; Data truncation: Data too long for column 'message' at row 1; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'message' at row 1]
+2022-06-18 15:35:01.453 [http-nio-8080-exec-3] WARN  c.b.m.e.plugins.inner.PaginationInnerInterceptor - optimize this sql to a count sql has exception, sql:"SELECT  id,username,nickname,password,tel,email,account_non_locked,enabled,created_time,updated_time  FROM user 
+ 
+ WHERE (id IN () AND enabled = ?)", exception:
+net.sf.jsqlparser.parser.ParseException: Encountered unexpected token: "IN" "IN"
+    at line 3, column 12.
+
+Was expecting one of:
+
+    "&"
+    ")"
+    "::"
+    "<<"
+    ">>"
+    "COLLATE"
+    "["
+    "^"
+    "|"
+
+2022-06-18 15:35:01.457 [http-nio-8080-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.dao.DataIntegrityViolationException: <EOL><EOL>### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'message' at row 1<EOL><EOL>### The error may exist in com/example/log/dao/SystemLogDao.java (best guess)<EOL><EOL>### The error may involve com.example.log.dao.SystemLogDao.updateById-Inline<EOL><EOL>### The error occurred while setting parameters<EOL><EOL>### SQL: UPDATE system_log  SET username=?, url=?, method=?, args=?, result=?, message=?, created_time=?, class_method=?  WHERE id=?<EOL><EOL>### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'message' at row 1<EOL>; Data truncation: Data too long for column 'message' at row 1; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'message' at row 1]
+2022-06-18 15:35:03.107 [http-nio-8080-exec-9] WARN  c.b.m.e.plugins.inner.PaginationInnerInterceptor - optimize this sql to a count sql has exception, sql:"SELECT  id,username,nickname,password,tel,email,account_non_locked,enabled,created_time,updated_time  FROM user 
+ 
+ WHERE (id IN () AND enabled = ?)", exception:
+net.sf.jsqlparser.parser.ParseException: Encountered unexpected token: "IN" "IN"
+    at line 3, column 12.
+
+Was expecting one of:
+
+    "&"
+    ")"
+    "::"
+    "<<"
+    ">>"
+    "COLLATE"
+    "["
+    "^"
+    "|"
+
+2022-06-18 15:35:03.111 [http-nio-8080-exec-9] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.dao.DataIntegrityViolationException: <EOL><EOL>### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'message' at row 1<EOL><EOL>### The error may exist in com/example/log/dao/SystemLogDao.java (best guess)<EOL><EOL>### The error may involve com.example.log.dao.SystemLogDao.updateById-Inline<EOL><EOL>### The error occurred while setting parameters<EOL><EOL>### SQL: UPDATE system_log  SET username=?, url=?, method=?, args=?, result=?, message=?, created_time=?, class_method=?  WHERE id=?<EOL><EOL>### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'message' at row 1<EOL>; Data truncation: Data too long for column 'message' at row 1; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'message' at row 1]
+2022-06-18 15:36:28.455 [http-nio-8080-exec-2] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/admin-template?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC, version : 1.2.4, lastPacketReceivedIdleMillis : 85344
+2022-06-18 15:36:28.455 [http-nio-8080-exec-2] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/admin-template?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC, version : 1.2.4, lastPacketReceivedIdleMillis : 85960
+2022-06-18 15:36:28.482 [http-nio-8080-exec-2] WARN  c.b.m.e.plugins.inner.PaginationInnerInterceptor - optimize this sql to a count sql has exception, sql:"SELECT  id,username,nickname,password,tel,email,account_non_locked,enabled,created_time,updated_time  FROM user 
+ 
+ WHERE (id IN () AND enabled = ?)", exception:
+net.sf.jsqlparser.parser.ParseException: Encountered unexpected token: "IN" "IN"
+    at line 3, column 12.
+
+Was expecting one of:
+
+    "&"
+    ")"
+    "::"
+    "<<"
+    ">>"
+    "COLLATE"
+    "["
+    "^"
+    "|"
+
+2022-06-18 15:36:28.486 [http-nio-8080-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.dao.DataIntegrityViolationException: <EOL><EOL>### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'message' at row 1<EOL><EOL>### The error may exist in com/example/log/dao/SystemLogDao.java (best guess)<EOL><EOL>### The error may involve com.example.log.dao.SystemLogDao.updateById-Inline<EOL><EOL>### The error occurred while setting parameters<EOL><EOL>### SQL: UPDATE system_log  SET username=?, url=?, method=?, args=?, result=?, message=?, created_time=?, class_method=?  WHERE id=?<EOL><EOL>### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'message' at row 1<EOL>; Data truncation: Data too long for column 'message' at row 1; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'message' at row 1]
+2022-06-18 15:37:01.682 [http-nio-8080-exec-4] WARN  c.b.m.e.plugins.inner.PaginationInnerInterceptor - optimize this sql to a count sql has exception, sql:"SELECT  id,username,nickname,password,tel,email,account_non_locked,enabled,created_time,updated_time  FROM user 
+ 
+ WHERE (id IN () AND enabled = ?)", exception:
+net.sf.jsqlparser.parser.ParseException: Encountered unexpected token: "IN" "IN"
+    at line 3, column 12.
+
+Was expecting one of:
+
+    "&"
+    ")"
+    "::"
+    "<<"
+    ">>"
+    "COLLATE"
+    "["
+    "^"
+    "|"
+
+2022-06-18 15:37:01.686 [http-nio-8080-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.dao.DataIntegrityViolationException: <EOL><EOL>### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'message' at row 1<EOL><EOL>### The error may exist in com/example/log/dao/SystemLogDao.java (best guess)<EOL><EOL>### The error may involve com.example.log.dao.SystemLogDao.updateById-Inline<EOL><EOL>### The error occurred while setting parameters<EOL><EOL>### SQL: UPDATE system_log  SET username=?, url=?, method=?, args=?, result=?, message=?, created_time=?, class_method=?  WHERE id=?<EOL><EOL>### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'message' at row 1<EOL>; Data truncation: Data too long for column 'message' at row 1; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'message' at row 1]
+2022-06-18 15:40:11.450 [http-nio-8080-exec-6] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/admin-template?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC, version : 1.2.4, lastPacketReceivedIdleMillis : 189764
+2022-06-18 15:48:15.656 [http-nio-8080-exec-3] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/admin-template?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC, version : 1.2.4, lastPacketReceivedIdleMillis : 484094
+2022-06-18 15:48:15.657 [http-nio-8080-exec-3] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/admin-template?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC, version : 1.2.4, lastPacketReceivedIdleMillis : 484103
+2022-06-18 15:50:21.508 [http-nio-8080-exec-10] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/admin-template?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC, version : 1.2.4, lastPacketReceivedIdleMillis : 125710
+2022-06-18 15:50:21.508 [http-nio-8080-exec-10] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/admin-template?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC, version : 1.2.4, lastPacketReceivedIdleMillis : 125723
+2022-06-18 15:52:26.024 [http-nio-8080-exec-8] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/admin-template?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC, version : 1.2.4, lastPacketReceivedIdleMillis : 124382
+2022-06-18 15:52:26.025 [http-nio-8080-exec-8] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/admin-template?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC, version : 1.2.4, lastPacketReceivedIdleMillis : 124390
+2022-06-18 15:55:18.897 [http-nio-8080-exec-3] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/admin-template?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC, version : 1.2.4, lastPacketReceivedIdleMillis : 143226
+2022-06-18 15:55:18.897 [http-nio-8080-exec-3] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/admin-template?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC, version : 1.2.4, lastPacketReceivedIdleMillis : 143234
+2022-06-18 15:57:43.029 [http-nio-8080-exec-10] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/admin-template?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC, version : 1.2.4, lastPacketReceivedIdleMillis : 143994
+2022-06-18 15:57:43.029 [http-nio-8080-exec-10] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/admin-template?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC, version : 1.2.4, lastPacketReceivedIdleMillis : 144003
+2022-06-18 16:09:24.467 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-8} closing ...
+2022-06-18 16:09:24.468 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-8} closed
